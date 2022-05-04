@@ -18,8 +18,10 @@ func main() {
 	//	println(val)
 	//}
 
-	//res := binaryTree.InOrder(root)
-	//for _, val := range res {
-	//	println(val)
-	//}
+	res := binaryTree.LevelOrder(root)
+	for _, val := range res {
+		for _, v := range val {
+			println(v)
+		}
+	}
 }
