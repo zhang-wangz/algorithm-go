@@ -22,15 +22,11 @@ func partition(nums []int, start, end int) int {
 	i := start
 	for j := start; j < end; j++ {
 		if nums[j] < p {
-			tmp := nums[i]
-			nums[i] = nums[j]
-			nums[j] = tmp
+			nums[i], nums[j] = nums[j], nums[i]
 			i++
 		}
 	}
 	// 把end位置换到i，并且返回中间标志值
-	tmp := nums[i]
-	nums[i] = nums[end]
-	nums[end] = tmp
+	nums[i], nums[end] = nums[end], nums[i]
 	return i
 }

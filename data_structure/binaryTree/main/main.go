@@ -2,7 +2,7 @@ package main
 
 import (
 	"algorithm-pattern/data_structure/binaryTree"
-	"algorithm-pattern/data_structure/binaryTree/solution/merge"
+	"algorithm-pattern/data_structure/binaryTree/solution/binary-search"
 )
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 	//	println(val)
 	//}
 
-	res := merge.MaxPathSum(root)
+	res := binary_search.IsBinaryTree(root)
 	//for _, val := range res {
 	//	for _, v := range val {
 	//		println(v)
