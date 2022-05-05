@@ -12,5 +12,6 @@ func MaxDepth(root *binaryTree.Node) int {
 	if left > right {
 		return left + 1
 	}
+
 	return right + 1
 }
