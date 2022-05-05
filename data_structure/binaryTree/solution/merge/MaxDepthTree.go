@@ -1,7 +1,8 @@
-package solution
+package merge
 
 import "algorithm-pattern/data_structure/binaryTree"
 
+// 分治法
 func MaxDepth(root *binaryTree.Node) int {
 	if root == nil {
 		return 0

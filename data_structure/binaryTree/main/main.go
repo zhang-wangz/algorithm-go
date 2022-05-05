@@ -2,7 +2,7 @@ package main
 
 import (
 	"algorithm-pattern/data_structure/binaryTree"
-	"algorithm-pattern/data_structure/binaryTree/solution"
+	"algorithm-pattern/data_structure/binaryTree/solution/merge"
 )
 
 func main() {
@@ -19,7 +19,7 @@ func main() {
 	//	println(val)
 	//}
 
-	res := solution.MaxDepth(root)
+	res := merge.MaxPathSum(root)
 	//for _, val := range res {
 	//	for _, v := range val {
 	//		println(v)
