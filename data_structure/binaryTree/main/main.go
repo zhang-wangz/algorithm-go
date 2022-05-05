@@ -2,6 +2,7 @@ package main
 
 import (
 	"algorithm-pattern/data_structure/binaryTree"
+	"algorithm-pattern/data_structure/binaryTree/solution"
 )
 
 func main() {
@@ -18,10 +19,11 @@ func main() {
 	//	println(val)
 	//}
 
-	res := binaryTree.LevelOrder(root)
-	for _, val := range res {
-		for _, v := range val {
-			println(v)
-		}
-	}
+	res := solution.MaxDepth(root)
+	//for _, val := range res {
+	//	for _, v := range val {
+	//		println(v)
+	//	}
+	//}
+	println(res)
 }
