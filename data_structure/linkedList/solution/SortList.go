@@ -2,7 +2,7 @@ package solution
 
 import "algorithm-pattern/data_structure/linkedList"
 
-// 给你链表的头结点 head ，请将其按 升序 排列并返回 排序后的链表
+// 给你链表的头结点head ，请将其按升序排列并返回排序后的链表
 // 用mergeSort
 func SortList(head *linkedList.ListNode) *linkedList.ListNode {
 	if head == nil || head.Next == nil {

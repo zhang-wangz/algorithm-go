@@ -13,9 +13,9 @@ func main() {
 	head.Next.Next.Next.Next = &linkedList.ListNode{Val: 5}
 	head.Next.Next.Next.Next.Next = &linkedList.ListNode{Val: 2}
 
-	head = solution.SortList(head)
-	for head != nil {
-		println(head.Val)
-		head = head.Next
+	pre := solution.ReorderList(head)
+	for pre != nil {
+		println(pre.Val)
+		pre = pre.Next
 	}
 }
