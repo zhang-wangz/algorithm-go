@@ -6,12 +6,14 @@ import (
 )
 
 func main() {
-	head := &linkedList.ListNode{Val: 10}
-	head.Next = &linkedList.ListNode{Val: 5}
-	head.Next.Next = &linkedList.ListNode{Val: 7}
-	head.Next.Next.Next = &linkedList.ListNode{Val: 8}
+	head := &linkedList.ListNode{Val: 1}
+	head.Next = &linkedList.ListNode{Val: 4}
+	head.Next.Next = &linkedList.ListNode{Val: 3}
+	head.Next.Next.Next = &linkedList.ListNode{Val: 0}
+	head.Next.Next.Next.Next = &linkedList.ListNode{Val: 5}
+	head.Next.Next.Next.Next.Next = &linkedList.ListNode{Val: 2}
 
-	head = solution.ReverseList(head)
+	head = solution.SortList(head)
 	for head != nil {
 		println(head.Val)
 		head = head.Next
