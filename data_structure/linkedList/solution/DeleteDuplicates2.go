@@ -16,6 +16,7 @@ func deleteDuplicates2(head *linkedList.ListNode) *linkedList.ListNode {
 	for head.Next != nil && head.Next.Next != nil {
 		if head.Next.Val == head.Next.Next.Val {
 			lastVal = head.Next.Val
+			// 存在[1,1,1]情况
 			for head.Next != nil && head.Next.Val == lastVal {
 				head.Next = head.Next.Next
 			}

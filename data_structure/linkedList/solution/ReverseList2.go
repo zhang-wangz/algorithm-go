@@ -28,7 +28,7 @@ func ReverseList2(head *linkedList.ListNode, m, n int) *linkedList.ListNode {
 		p = head
 		head = tmp
 	}
-	// 此时 10->  7(pre)->5->nil  8(head)->9->nil
+	// 此时 10(tmpPre)->  7(p)->5(mid)->nil  8(head)->9->nil
 	tmpPre.Next = p
 	mid.Next = head
 	return dummy.Next
