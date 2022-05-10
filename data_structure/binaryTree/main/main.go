@@ -2,7 +2,7 @@ package main
 
 import (
 	"algorithm-pattern/data_structure/binaryTree"
-	"algorithm-pattern/data_structure/binaryTree/solution/binary-search"
+	"algorithm-pattern/data_structure/binaryTree/solution"
 )
 
 func main() {
@@ -14,12 +14,17 @@ func main() {
 	}
 	root.Right = &binaryTree.Node{Val: 11}
 
-	//res := binaryTree.PreOrder(root)
-	//for _, val := range res {
-	//	println(val)
-	//}
+	res := binaryTree.InOrder(root)
+	for _, val := range res {
+		println(val)
+	}
+	node := solution.ReserveTree2(root)
+	res = binaryTree.InOrder(node)
+	for _, val := range res {
+		println(val)
+	}
 
-	res := binary_search.IsBinaryTree(root)
+	//res := binary_search.IsBinaryTree(root)
 	//for _, val := range res {
 	//	for _, v := range val {
 	//		println(v)
