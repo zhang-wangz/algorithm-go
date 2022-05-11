@@ -1,6 +1,8 @@
 package main
 
+import "strconv"
+
 func main() {
-	var f bool
-	print(f)
+	a := 10
+	print(strconv.Itoa(a))
 }
