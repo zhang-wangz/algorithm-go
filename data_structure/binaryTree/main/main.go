@@ -37,9 +37,9 @@ func main() {
 		println(val)
 	}
 
-	s1 := res.Serialize(root)
-	println(s1)
-	s := res.Deserialize(s1)
+	s1 := res.Serialize2(root)
+	println("序列化", s1)
+	s := res.Deserialize2(s1)
 	prin = binaryTree.InOrder(s)
 	for _, val := range prin {
 		println(val)

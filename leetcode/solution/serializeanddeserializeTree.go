@@ -37,6 +37,22 @@ func (_ *Codec) Serialize(root *binaryTree.Node) string {
 	}
 	return strings.Join(res, ",")
 }
+func (c *Codec) Serialize2(root *binaryTree.Node) string {
+	if root == nil {
+		return ""
+	}
+	res := []string{}
+	res = append(res, strconv.Itoa(root.Val))
+	left := c.Serialize2(root.Left)
+	right := c.Serialize2(root.Right)
+	if !(left == "") {
+		res = append(res, left)
+	}
+	if right != "" {
+		res = append(res, right)
+	}
+	return strings.Join(res, ",")
+}
 
 // Deserializes your encoded data to tree.
 func (_ *Codec) Deserialize(data string) *binaryTree.Node {
@@ -70,4 +86,35 @@ func (_ *Codec) Deserialize(data string) *binaryTree.Node {
 		idx++
 	}
 	return res
+}
+func (_ *Codec) Deserialize2(data string) *binaryTree.Node {
+	if data == "" {
+		return nil
+	}
+	val := strings.Split(data, ",")
+	lst := []int{}
+	for _, v := range val {
+		n, _ := strconv.Atoi(v)
+		lst = append(lst, n)
+	}
+	node := helper(lst)
+	return node
+}
+
+func helper(val []int) *binaryTree.Node {
+	if len(val) == 0 {
+		return nil
+	}
+	node := &binaryTree.Node{Val: val[0]}
+	var i int
+	for i = 1; i < len(val); i++ {
+		if val[i] > val[0] {
+			break
+		}
+	}
+	if len(val) > 1 {
+		node.Left = helper(val[1:i])
+	}
+	node.Right = helper(val[i:])
+	return node
 }
