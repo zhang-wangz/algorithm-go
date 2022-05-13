@@ -1,11 +1,12 @@
 package main
 
-import "algorithm-pattern/sort"
+import "algorithm-pattern/sort/solution"
 
 func main() {
 	nums := []int{9, 2, 5, 4, 8, 2}
-	nums = sort.QuickSort(nums)
+	nums = solution.MergeSort(nums)
 	for _, val := range nums {
 		println(val)
 	}
+
 }
