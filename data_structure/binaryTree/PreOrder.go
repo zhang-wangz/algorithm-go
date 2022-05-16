@@ -13,11 +13,9 @@ func PreOrder(root *Node) []int {
 			stack = append(stack, root)
 			root = root.Left
 		}
-		for len(stack) != 0 {
-			node := stack[len(stack)-1]
-			stack = stack[:len(stack)-1]
-			root = node.Right
-		}
+		node := stack[len(stack)-1]
+		stack = stack[:len(stack)-1]
+		root = node.Right
 	}
 	return res
 }
