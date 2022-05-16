@@ -3,8 +3,10 @@
 ## 数据结构
 ### 二叉树
 ### 链表
-### 栈和队列
+### 栈, 队列
+### 二进制
 
 ## sort
 ### mergeSort
 ### quickSort
+### heapSort
