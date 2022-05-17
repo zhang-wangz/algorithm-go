@@ -19,13 +19,13 @@ func helper(root *binaryTree.Node) (int, int) {
 	if root == nil {
 		return 0, -(1 << 31)
 	}
-	lMax, lSingle := helper(root.Left)
-	rMax, rSingle := helper(root.Right)
+	lSingle, lMax := helper(root.Left)
+	rSingle, rMax := helper(root.Right)
 	var single int
 	if lSingle > rSingle {
-		single = lSingle + 1
+		single = max(lSingle+root.Val, 0)
 	} else {
-		single = rSingle + 1
+		single = max(rSingle+root.Val, 0)
 	}
 
 	maxPath := max(lMax, rMax)
