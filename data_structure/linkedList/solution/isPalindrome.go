@@ -13,10 +13,8 @@ func isPalindrome(head *linkedList.ListNode) bool {
 	for fast != nil && fast.Next != nil {
 		slow = slow.Next
 		fast = fast.Next.Next
-		if slow == fast {
-			break
-		}
 	}
+
 	// 此时slow是中点，只是验证需要使用中点的下一个
 	// 比如 1221, 此时head需要指向2
 	tailHead := slow.Next
