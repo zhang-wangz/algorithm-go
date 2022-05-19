@@ -5,7 +5,7 @@ func HeapSort(nums []int) []int {
 	if len(nums) == 0 {
 		return nums
 	}
-	// 排一个最大堆
+	// 排一个最大堆, 找出最大的节点
 	sink(nums, len(nums))
 	for i := len(nums) - 1; i >= 0; i-- {
 		nums[0], nums[i] = nums[i], nums[0]
