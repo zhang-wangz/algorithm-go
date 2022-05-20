@@ -24,12 +24,15 @@ func DecodeString(s string) string {
 			}
 			// pop [
 			stack = stack[:len(stack)-1]
+			// 统计数字
 			idx := 1
 			for len(stack)-idx >= 0 && (stack[len(stack)-idx]-'0') >= 0 && (stack[len(stack)-idx]-'0') <= 9 {
 				idx++
 			}
+			// 因为idx++，所以这里减去idx需要+1
 			num := stack[len(stack)-idx+1:]
 			stack = stack[:len(stack)-idx+1]
+
 			cnt, _ := strconv.Atoi(string(num))
 			for i := 0; i < cnt; i++ {
 				for j := len(tmp) - 1; j >= 0; j-- {
