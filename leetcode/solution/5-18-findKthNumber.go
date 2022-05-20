@@ -21,7 +21,7 @@ func findKthNumber(m int, n int, k int) int {
 		}
 	}
 	// 获取第一个大于等于k的值，不是l就是r
-	// 先判断l，因为l相对r小，这题需要获取左范围
+	// 先判断l，因为l相对r小，这题需要获w取左范围
 	if count(m, n, l) >= k {
 		return l
 	}

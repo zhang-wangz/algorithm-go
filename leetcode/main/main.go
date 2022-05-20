@@ -1,10 +1,8 @@
 package main
 
-import "fmt"
+import "algorithm-pattern/leetcode/solution"
 
 func main() {
-	s := "222"
-	s += "["
-	//cnt := s[0]
-	fmt.Printf("%s", s+"123")
+	data := [][]int{{3, 4}, {2, 3}, {1, 2}}
+	solution.FindRightInterval(data)
 }
