@@ -7,14 +7,16 @@ func largestRectangleArea(heights []int) int {
 	if len(heights) == 0 {
 		return 0
 	}
+	// 单调递增栈
 	stack := make([]int, 0)
 	left, right := make([]int, len(heights)), make([]int, len(heights))
 	res := 0
 	for i := 0; i < len(heights); i++ {
 		right[i] = len(heights)
 	}
+
 	for i := 0; i < len(heights); i++ {
-		for len(stack) != 0 && heights[i] <= heights[stack[len(stack)-1]] {
+		for len(stack) != 0 && heights[i] < heights[stack[len(stack)-1]] {
 			right[stack[len(stack)-1]] = i
 			stack = stack[:len(stack)-1]
 		}
