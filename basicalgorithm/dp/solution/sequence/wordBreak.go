@@ -12,10 +12,13 @@ func wordBreak(s string, wordDict []string) bool {
 	for i := 0; i < len(dp); i++ {
 		dp[i] = false
 	}
+	// 0位置是可以被拆分的
 	dp[0] = true
 	for i := 0; i < len(s); i++ {
 		if dp[i] {
 			for j := i + 1; j <= len(s); j++ {
+				// 如果后面的部分可以被拆分
+				// 到j为止也是可以被拆分的
 				if ok, _ := m[s[i:j]]; ok {
 					dp[j] = true
 				}
