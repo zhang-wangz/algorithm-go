@@ -3,6 +3,6 @@ package main
 import "algorithm-pattern/leetcode/solution"
 
 func main() {
-	data := []int{9, 5, 3, 3}
-	//solution.RepeatedNTimes(data)
+	data := [][]int{{4, 2, 3}, {0, 0, 1}, {7, 6, 5}}
+	solution.CutOffTree(data)
 }
