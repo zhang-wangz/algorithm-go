@@ -19,11 +19,11 @@ func sink(nums []int, len int) {
 	for i := len/2 - 1; i >= 0; i-- {
 		left := 2*i + 1
 		if left < len && nums[left] > nums[i] {
-			nums[i], nums[i] = nums[i], nums[i]
+			nums[i], nums[left] = nums[left], nums[i]
 		}
 		right := 2*i + 2
 		if right < len && nums[right] > nums[i] {
-			nums[i], nums[i] = nums[i], nums[i]
+			nums[i], nums[right] = nums[right], nums[i]
 		}
 	}
 }
