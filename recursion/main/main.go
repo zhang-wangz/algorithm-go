@@ -4,7 +4,10 @@ func main() {
 	//s := "hdsiaixsbcia"
 	//solution.ReverseString([]byte(s))
 
-	var m map[int]bool = make(map[int]bool, 0)
+	m := make(map[int]byte)
 	//_, ok := m[2]
-	print(m[1])
+	print(m[2])
+	m[2] += 1
+	print(m[2])
+
 }
