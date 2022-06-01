@@ -1,4 +1,4 @@
-package solution
+package _022_05
 
 // https://leetcode.cn/problems/remove-outermost-parentheses/
 // 有效括号字符串为空 ""、"(" + A + ")" 或 A + B ，其中 A 和 B 都是有效的括号字符串，+ 代表字符串的连接。

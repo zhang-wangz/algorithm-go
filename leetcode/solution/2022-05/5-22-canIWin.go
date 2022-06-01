@@ -1,4 +1,4 @@
-package solution
+package _022_05
 
 // https://leetcode.cn/problems/can-i-win/
 // https://leetcode.cn/problems/can-i-win/solution/by-a-fei-8-jvlx/

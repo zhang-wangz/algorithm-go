@@ -2,7 +2,7 @@ package main
 
 import (
 	"algorithm-pattern/data_structure/binaryTree"
-	solution2 "algorithm-pattern/leetcode/solution"
+	"algorithm-pattern/leetcode/solution/2022-05"
 )
 
 func main() {
@@ -31,7 +31,7 @@ func main() {
 	//		println(v)
 	//	}
 	//}
-	res := &solution2.Codec{}
+	res := &_022_05.Codec{}
 	prin := binaryTree.InOrder(root)
 	for _, val := range prin {
 		println(val)

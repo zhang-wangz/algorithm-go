@@ -1,4 +1,4 @@
-package solution
+package _022_05
 
 // https://leetcode.cn/problems/find-closest-lcci/
 // 有个内含单词的超大文本文件，给定任意两个不同的单词，找出在这个文件中这两个单词的最短距离(相隔单词数)。

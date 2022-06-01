@@ -1,4 +1,4 @@
-package solution
+package _022_05
 
 // https://leetcode.cn/problems/unique-substrings-in-wraparound-string/
 // 把字符串 s 看作是 “abcdefghijklmnopqrstuvwxyz” 的无限环绕字符串，所以 s 看起来是这样的：

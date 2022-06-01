@@ -15,7 +15,7 @@ func main() {
 	//root.Right = &binaryTree.Node{Val: 0}
 	//res := solution.SumRootToLeaf(root)
 	//fmt.Println(res)
-	s := []string{"z", "a", "b", "z"}
-	res := solution.AlienOrder(s)
+	s := []int{1, 1, 2, 2, 2}
+	res := solution.Makesquare(s)
 	println(res)
 }

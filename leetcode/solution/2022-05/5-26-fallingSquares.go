@@ -1,4 +1,4 @@
-package solution
+package _022_05
 
 // https://leetcode.cn/problems/falling-squares/
 // 在无限长的数轴（即 x 轴）上，我们根据给定的顺序放置对应的正方形方块。

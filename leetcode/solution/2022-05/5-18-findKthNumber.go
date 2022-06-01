@@ -1,4 +1,4 @@
-package solution
+package _022_05
 
 // https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/solution/dong-tu-yan-shi-by-xiaohu9527-3k7s/
 // 几乎每一个人都用 乘法表。但是你能在乘法表中快速找到第k小的数字吗？

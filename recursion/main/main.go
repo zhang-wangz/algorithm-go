@@ -4,10 +4,8 @@ func main() {
 	//s := "hdsiaixsbcia"
 	//solution.ReverseString([]byte(s))
 
-	m := make(map[int]byte)
+	edge := make([]int, 4)
 	//_, ok := m[2]
-	print(m[2])
-	m[2] += 1
-	print(m[2])
+	print(edge[0])
 
 }

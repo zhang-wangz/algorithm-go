@@ -1,4 +1,4 @@
-package solution
+package _022_05
 
 import "math"
 
