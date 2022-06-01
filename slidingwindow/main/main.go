@@ -1,10 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"algorithm-pattern/slidingwindow/solution"
+	"fmt"
+)
 
 func main() {
-	s := "sdads"
-	for _, e := range s {
-		fmt.Printf("%T", e)
-	}
+	s := "abcabcbb"
+	res := solution.LengthOfLongestSubstring(s)
+	fmt.Println(res)
 }
