@@ -5,6 +5,7 @@ package solution
 func hammingWeight(num uint32) int {
 	res := 0
 	for num != 0 {
+		// 消除最后一位1
 		num = num & (num - 1)
 		res++
 	}

@@ -10,6 +10,7 @@ func singleNumber3(nums []int) []int {
 	// res = a ^ b
 	r := []int{res, res}
 	// 根据最后一位1的位置进行进行区分
+	// 获取最后一个1
 	diff := (res & (res - 1)) ^ res
 	for i := 0; i < len(nums); i++ {
 		if diff&nums[i] == 0 {
