@@ -15,7 +15,8 @@ func main() {
 	//root.Right = &binaryTree.Node{Val: 0}
 	//res := solution.SumRootToLeaf(root)
 	//fmt.Println(res)
-	s := []int{1, 1, 2, 2, 2}
-	res := solution.Makesquare(s)
+	//s := []int{1, 1, 2, 2, 2}
+	s := []string{"fxggfzk.fo.q+e@uxbeyetxc.com", "fxggfzk.fo.q+h@uxbeyetxc.com", "uv+mw.lkw+ybe@yppz.com"}
+	res := solution.NumUniqueEmails(s)
 	println(res)
 }
