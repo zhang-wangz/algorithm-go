@@ -1,6 +1,8 @@
 package main
 
-import "algorithm-pattern/leetcode/solution"
+import (
+	"algorithm-pattern/leetcode/solution"
+)
 
 func main() {
 	//data := [][]int{{4, 2, 3}, {0, 0, 1}, {7, 6, 5}}
