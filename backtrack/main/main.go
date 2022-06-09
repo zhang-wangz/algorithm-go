@@ -7,7 +7,7 @@ func main() {
 	//a := make([]challenge.Ans, 1)
 	//a[0].Cnt++
 	//print(a[0].Cnt)
-	s := "aab"
-	r := challenge.Partition(s)
+	s := "25525511135"
+	r := challenge.RestoreIpAddresses(s)
 	println(r)
 }
