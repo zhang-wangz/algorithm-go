@@ -1,4 +1,4 @@
-# algorithm-pattern-go
+# algorithm-go
 
 ## 数据结构
 ### 二叉树
