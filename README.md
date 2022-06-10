@@ -6,7 +6,7 @@ algorithm go
 
 > a repo records some algorithms using go.
 
-![](header.jpg)
+![](header.png)
 
 ## 内容列表
 
