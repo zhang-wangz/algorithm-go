@@ -80,7 +80,11 @@ algorithm go 遵循 [Contributor Covenant](http://contributor-covenant.org/versi
 ### 贡献
 
 感谢参与相关算法题解的书写
-
+1.Fork it (https://github.com/zhang-wangz/algorithm-go/)
+2.Create your feature branch (git checkout -b yourfeature/yourfooBar)
+3.Commit your changes (git commit -am 'Add some yourfooBar')
+4.Push to the branch (git push origin yourfeature/yourfooBar)
+5.Create a new Pull Request
 
 ## 使用许可
 
