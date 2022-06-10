@@ -56,6 +56,11 @@ algorithm go
 |  Sliding window  |  滑动窗口  |   ✅    |
 |       Sort       |    排序    |   ✅    |
 |      Stack       |     堆     |   ✅    |
+| bfs | 广度搜索 | ✅ |
+| dfs | 深度搜索 | ✅ |
+| typo sort | 拓扑排序 | belong sort  ✅ |
+| mingenTree | 最小生成树 | belong origin oj  ✅ |
+| Union-find sets | 并查集 | belong origin oj  ✅ |
 
 
 
