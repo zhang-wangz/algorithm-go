@@ -6,7 +6,12 @@ algorithm go
 
 > a repo records some algorithms using go.
 
-[![Build Status][travis-image]][travis-url]
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
 ![](header.jpg)
 
@@ -36,7 +41,7 @@ algorithm go
    如果你有更好的分类内容或者原创题，可以提交issue或者fork后申请合并你的代码题解
 
 ## 说明
-      该仓库每个算法模块都依据 main，solution，challenge(如果有的话)进行划分，solution和challenge下写该分类下的相关题解，main下进行solution或者challenge下写好的题解的测试，运行等
+   该仓库每个算法模块都依据 main，solution，challenge(如果有的话)进行划分，solution和challenge下写该分类下的相关题解，main下进行solution或者challenge下写好的题解的测试，运行等
 
 |       英文       |  对应中文  |
 | :--------------: | :--------: |
@@ -89,5 +94,6 @@ algorithm go 遵循 [Contributor Covenant](http://contributor-covenant.org/versi
 ## 使用许可
 
 [MIT](LICENSE) © Athony Wang
+ good luck, may we have a better tomorrow!
 
 
