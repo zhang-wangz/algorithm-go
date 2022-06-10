@@ -1,17 +1,10 @@
 # algorithm go
 
-[![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
+![Github stars](https://img.shields.io/github/stars/zhang-wangz/algorithm-go.svg) ![Github MIT](https://img.shields.io/badge/LICENSE-MIT-green) [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) 
 
 algorithm go
 
 > a repo records some algorithms using go.
-
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 ![](header.jpg)
 
