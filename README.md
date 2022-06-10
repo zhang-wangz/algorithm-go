@@ -34,7 +34,7 @@ algorithm go
 ## 说明
    该仓库每个算法模块都依据 main，solution，challenge(如果有的话)进行划分，solution和challenge下写该分类下的相关题解，main下进行solution或者challenge下写好的题解的测试，运行等
 
-|       英文       |  对应中文  | finish |
+|       英文       |  对应中文  | 有无相关记录 |
 | :--------------: | :--------: | :----: |
 |    Backtrack     |    回溯    |   ✅    |
 |      Binary      |   二进制   |   ✅    |
