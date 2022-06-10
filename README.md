@@ -20,8 +20,7 @@ algorithm go
 
 ## 背景
 
-​    `algorithm go` 最开始因为 [@greyireland](https://github.com/greyireland) 在项目 [greyireland/greyireland](https://github.com/greyireland/c) 中进行算法练习而来的
-刷题刷着刷着感觉内容不够完整，便在此基础上增加了一些内容，并且把leetcode每日刷题部分加入其中，还增加了例如数论，几何，线段树等内容。
+​    `algorithm go` 最开始是照着项目 [greyireland/algorithm-pattern](https://github.com/greyireland/algorithm-pattern) 中进行算法练习而来的，但是刷着总感觉内容相对单调，便在基础之上整合了相关内容，并且把leetcode每日刷题部分加入其中，还增加了例如数论，几何，线段树等类型。使得不再成为一种单一的算法模版练习使用。
 
 > 写这份文档的目的是为了更多的人参与算法的书写，也为了自己熟悉记录。
 
@@ -77,11 +76,12 @@ algorithm go 遵循 [Contributor Covenant](http://contributor-covenant.org/versi
 ### 贡献
 
 感谢参与相关算法题解的书写
-1.Fork it (https://github.com/zhang-wangz/algorithm-go/)
-2.Create your feature branch (git checkout -b yourfeature/yourfooBar)
-3.Commit your changes (git commit -am 'Add some yourfooBar')
-4.Push to the branch (git push origin yourfeature/yourfooBar)
-5.Create a new Pull Request
+
+ - 1. Fork it (https://github.com/zhang-wangz/algorithm-go/)
+ - 2. Create your feature branch (git checkout -b yourfeature/yourfooBar)
+ - 3. Commit your changes (git commit -am 'Add some yourfooBar')
+ - 4. Push to the branch (git push origin yourfeature/yourfooBar)
+ - 5. Create a new Pull Request
 
 ## 使用许可
 
