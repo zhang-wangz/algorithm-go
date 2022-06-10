@@ -86,5 +86,5 @@ algorithm go 遵循 [Contributor Covenant](http://contributor-covenant.org/versi
 ## 使用许可
 
 [MIT](LICENSE) © Athony Wang
- good luck, may we have a better tomorrow!
+good luck, may we have a better tomorrow!
 
