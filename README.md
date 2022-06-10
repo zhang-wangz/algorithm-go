@@ -24,7 +24,6 @@ algorithm go
 刷题刷着刷着感觉内容不够完整，便在此基础上增加了一些内容，并且把leetcode每日刷题部分加入其中，还增加了例如数论，几何，线段树等内容。
 
 > 写这份文档的目的是为了更多的人参与算法的书写，也为了自己熟悉记录。
-—— [Ken Williams, Perl Hackers](http://mathforum.org/ken/perl_modules.html#document)
 
 这个仓库的目标是：
  - 1. 加深自己的算法理解
