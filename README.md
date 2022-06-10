@@ -25,8 +25,8 @@ algorithm go
 > 写这份文档的目的是为了更多的人参与算法的书写，也为了自己熟悉记录。
 
 这个仓库的目标是：
- - 1. 加深自己的算法理解
- - 2. 希望更多的人加入写算法 
+1. 加深自己的算法理解
+2. 希望更多的人加入写算法 
 
 ## 参与
    如果你有更好的分类内容或者原创题，可以提交issue或者fork后申请合并你的代码题解
@@ -77,11 +77,11 @@ algorithm go 遵循 [Contributor Covenant](http://contributor-covenant.org/versi
 
 感谢参与相关算法题解的书写
 
- - 1. Fork it (https://github.com/zhang-wangz/algorithm-go/)
- - 2. Create your feature branch (git checkout -b yourfeature/yourfooBar)
- - 3. Commit your changes (git commit -am 'Add some yourfooBar')
- - 4. Push to the branch (git push origin yourfeature/yourfooBar)
- - 5. Create a new Pull Request
+1. Fork it (https://github.com/zhang-wangz/algorithm-go/)
+2. Create your feature branch (git checkout -b yourfeature/yourfooBar)
+3. Commit your changes (git commit -am 'Add some yourfooBar')
+4. Push to the branch (git push origin yourfeature/yourfooBar)
+5. Create a new Pull Request
 
 ## 使用许可
 
