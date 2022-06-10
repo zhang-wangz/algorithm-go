@@ -22,8 +22,6 @@ algorithm go
 
 ​    `algorithm go` 最开始是照着项目 [greyireland/algorithm-pattern](https://github.com/greyireland/algorithm-pattern) 中进行算法练习而来的，但是刷着总感觉内容相对单调，便在基础之上整合了相关内容，并且把leetcode每日刷题部分加入其中，还增加了例如数论，几何，线段树等类型。使得不再成为一种单一的算法模版练习使用。
 
-> 写这份文档的目的是为了更多的人参与算法的书写，也为了自己熟悉记录。
-
 这个仓库的目标是：
 1. 加深自己的算法理解
 2. 希望更多的人加入写算法 
