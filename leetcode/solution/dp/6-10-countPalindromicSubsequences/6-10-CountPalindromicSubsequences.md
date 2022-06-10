@@ -78,4 +78,4 @@ public int countPalindromicSubsequences(String s) {
 **复杂度分析：**
 时间复杂度：O(n^2)
 空间复杂度：O(n^2)
-来源:https://leetcode.cn/problems/count-different-palindromic-subsequences/solution/tong-ji-butong-by-jiang-hui-4-q5xf/
+> 来源:https://leetcode.cn/problems/count-different-palindromic-subsequences/solution/tong-ji-butong-by-jiang-hui-4-q5xf/
