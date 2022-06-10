@@ -1,6 +1,6 @@
 package _022_05
 
-import "algorithm-pattern/data_structure/binaryTree"
+import "algorithm-go/binaryTree"
 
 // 设计一个算法，找出二叉搜索树中指定节点的“下一个”节点（也即中序后继）。
 // 如果指定节点没有对应的“下一个”节点，则返回null。

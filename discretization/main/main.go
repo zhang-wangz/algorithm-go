@@ -1,6 +1,6 @@
 package main
 
-// 立个flag，这周掌握离散化
+// 离散化待填坑
 func main() {
 	res := [][]int{{1, 2}}
 	for i, v := range res {

@@ -1,7 +1,7 @@
 package _022_05
 
 import (
-	"algorithm-pattern/data_structure/binaryTree"
+	"algorithm-go/binaryTree"
 	"strconv"
 	"strings"
 )

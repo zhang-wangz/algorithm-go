@@ -1,7 +1,7 @@
 package solution
 
 import (
-	"algorithm-pattern/data_structure/linkedList"
+	"algorithm-go/linkedList"
 )
 
 // https://leetcode.cn/problems/swap-nodes-in-pairs/

@@ -1,6 +1,6 @@
 package _022_05
 
-import "algorithm-pattern/data_structure/binaryTree"
+import "algorithm-go/binaryTree"
 
 // https://leetcode.cn/problems/univalued-binary-tree/
 

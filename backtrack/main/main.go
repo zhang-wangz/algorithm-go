@@ -1,6 +1,6 @@
 package main
 
-import "algorithm-pattern/backtrack/challenge"
+import "algorithm-go/backtrack/challenge"
 
 func main() {
 	//challenge.LetterCombinations("23")

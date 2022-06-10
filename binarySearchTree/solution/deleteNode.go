@@ -1,6 +1,6 @@
 package solution
 
-import "algorithm-pattern/data_structure/binaryTree"
+import "algorithm-go/binaryTree"
 
 func deleteNode(root *binaryTree.Node, key int) *binaryTree.Node {
 	if root == nil {

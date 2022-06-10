@@ -1,6 +1,6 @@
 package solution
 
-import "algorithm-pattern/data_structure/binaryTree"
+import "algorithm-go/binaryTree"
 
 func insertIntoBST(root *binaryTree.Node, val int) *binaryTree.Node {
 	if root == nil {

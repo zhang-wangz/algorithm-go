@@ -1,6 +1,6 @@
 package _022_05
 
-import "algorithm-pattern/data_structure/binaryTree"
+import "algorithm-go/binaryTree"
 
 // https://leetcode.cn/problems/sum-of-root-to-leaf-binary-numbers/
 // 给出一棵二叉树，其上每个结点的值都是 0 或 1 。每一条从根到叶的路径都代表一个从最高有效位开始的二进制数。

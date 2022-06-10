@@ -1,7 +1,7 @@
 package solution
 
 import (
-	"algorithm-pattern/data_structure/binaryTree"
+	"algorithm-go/binaryTree"
 )
 
 // https://leetcode.cn/problems/validate-binary-search-tree/

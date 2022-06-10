@@ -1,6 +1,6 @@
 package main
 
-import "algorithm-pattern/leetcode/solution/dp"
+import dp2 "algorithm-go/leetcode/solution/dp/6-10-countPalindromicSubsequences"
 
 func main() {
 	//data := [][]int{{4, 2, 3}, {0, 0, 1}, {7, 6, 5}}
@@ -18,6 +18,6 @@ func main() {
 	//s := []int{1, 1, 2, 2, 2}
 	//s := []string{"fxggfzk.fo.q+e@uxbeyetxc.com", "fxggfzk.fo.q+h@uxbeyetxc.com", "uv+mw.lkw+ybe@yppz.com"}
 	s := "bccb"
-	res := dp.CountPalindromicSubsequences(s)
+	res := dp2.CountPalindromicSubsequences(s)
 	println(res)
 }

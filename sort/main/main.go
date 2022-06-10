@@ -1,6 +1,6 @@
 package main
 
-import "algorithm-pattern/sort/solution"
+import "algorithm-go/sort/solution"
 
 func main() {
 	nums := []int{9, 2, 5, 4, 8, 2}

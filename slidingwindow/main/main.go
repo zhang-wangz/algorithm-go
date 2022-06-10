@@ -1,7 +1,7 @@
 package main
 
 import (
-	"algorithm-pattern/slidingwindow/solution"
+	"algorithm-go/slidingwindow/solution"
 	"fmt"
 )
 
