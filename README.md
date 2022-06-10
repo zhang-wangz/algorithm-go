@@ -36,27 +36,27 @@ algorithm go
 ## 说明
    该仓库每个算法模块都依据 main，solution，challenge(如果有的话)进行划分，solution和challenge下写该分类下的相关题解，main下进行solution或者challenge下写好的题解的测试，运行等
 
-|       英文       |  对应中文  |
-| :--------------: | :--------: |
-|    Backtrack     |    回溯    |
-|      Binary      |   二进制   |
-|  Binary search   |  二分搜索  |
-| binarysearchTree | 二分搜索树 |
-|    binaryTree    |   二叉树   |
-|  Discretization  |   离散化   |
-|        dp        |  动态规划  |
-|     Geometry     |    几何    |
-|       kmp        |    kmp     |
-|     Leetcode     |    力扣    |
-|   Linked list    |    链表    |
-|  Number theory   |    数论    |
-|    Origin oj     |   原创oj   |
-|      Queue       |    队列    |
-|    Recursion     |    递归    |
-|   SegmentTree    |   线段树   |
-|  Sliding window  |  滑动窗口  |
-|       Sort       |    排序    |
-|      Stack       |     堆     |
+|       英文       |  对应中文  | finish |
+| :--------------: | :--------: | :----: |
+|    Backtrack     |    回溯    |   ✅    |
+|      Binary      |   二进制   |   ✅    |
+|  Binary search   |  二分搜索  |   ✅    |
+| binarysearchTree | 二分搜索树 |   ✅    |
+|    binaryTree    |   二叉树   |   ✅    |
+|  Discretization  |   离散化   |   ❌    |
+|        dp        |  动态规划  |   ✅    |
+|     Geometry     |    几何    |   ❌    |
+|       kmp        |    kmp     |   ❌    |
+|     Leetcode     |    力扣    |   ✅    |
+|   Linked list    |    链表    |   ✅    |
+|  Number theory   |    数论    |   ❌    |
+|    Origin oj     |   原创oj   |   ✅    |
+|      Queue       |    队列    |   ✅    |
+|    Recursion     |    递归    |   ✅    |
+|   SegmentTree    |   线段树   |   ✅    |
+|  Sliding window  |  滑动窗口  |   ✅    |
+|       Sort       |    排序    |   ✅    |
+|      Stack       |     堆     |   ✅    |
 
 
 
@@ -88,5 +88,4 @@ algorithm go 遵循 [Contributor Covenant](http://contributor-covenant.org/versi
 
 [MIT](LICENSE) © Athony Wang
  good luck, may we have a better tomorrow!
-
 
