@@ -29,10 +29,11 @@ algorithm go
 2. 希望更多的人加入写算法 
 
 ## 参与
-   如果你有更好的分类内容或者原创题，可以提交issue或者fork后申请合并你的代码题解
+如果你有更好的分类内容或者原创题，可以提交issue或者fork后申请合并你的代码题解
 
 ## 说明
-   该仓库每个算法模块都依据 main，solution，challenge(如果有的话)进行划分，solution和challenge下写该分类下的相关题解，main下进行solution或者challenge下写好的题解的测试，运行等，同时，你也可以对相关题目增加题解说明，例如以下这样，[example](https://github.com/zhang-wangz/algorithm-go/blob/main/leetcode/solution/dp/6-10-countPalindromicSubsequences/6-10-CountPalindromicSubsequences.md)
+该仓库每个算法模块都依据 main，solution，challenge(如果有的话)进行划分，solution和challenge下写该分类下的相关题解，main下进行solution或者challenge下写好的题解的测试，运行等。 
+同时，你也可以对相关题目增加题解说明，例如以下这样，[example](https://github.com/zhang-wangz/algorithm-go/blob/main/leetcode/solution/dp/6-10-countPalindromicSubsequences/6-10-CountPalindromicSubsequences.md)
 
 |       英文       |  中文  | 有无相关记录 |
 | :--------------: | :--------: | :----: |
