@@ -23,6 +23,7 @@ func (this *Solution2) Pick() []int {
 		y1, y2 := e[1], e[3]
 		cur := (x2 - x1 + 1) * (y2 - y1 + 1)
 		curSum += cur
+		// 当前方块抽到的概率
 		if rand.Intn(curSum+1) < cur {
 			idx = i
 		}

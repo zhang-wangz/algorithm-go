@@ -12,6 +12,7 @@ func jump(nums []int) int {
 	}
 	r := make([]int, len(nums))
 	for i := 0; i < len(nums); i++ {
+		// 先设置成最大步数
 		r[i] = i
 		for j := 0; j < i; j++ {
 			if nums[j]+j >= i {

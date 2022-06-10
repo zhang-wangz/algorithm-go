@@ -10,6 +10,8 @@ func backPack(m int, A []int) int {
 	}
 	for i := 1; i <= len(A); i++ {
 		for j := 1; j <= m; j++ {
+			// 如果j大小的背包放不下第i个物品
+			// 就装的和i-1个物品能装的一样
 			if j-A[i-1] < 0 {
 				dp[i][j] = dp[i-1][j]
 			} else {

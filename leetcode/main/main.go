@@ -1,8 +1,6 @@
 package main
 
-import (
-	"algorithm-pattern/leetcode/solution"
-)
+import "algorithm-pattern/leetcode/solution/dp"
 
 func main() {
 	//data := [][]int{{4, 2, 3}, {0, 0, 1}, {7, 6, 5}}
@@ -18,7 +16,8 @@ func main() {
 	//res := solution.SumRootToLeaf(root)
 	//fmt.Println(res)
 	//s := []int{1, 1, 2, 2, 2}
-	s := []string{"fxggfzk.fo.q+e@uxbeyetxc.com", "fxggfzk.fo.q+h@uxbeyetxc.com", "uv+mw.lkw+ybe@yppz.com"}
-	res := solution.NumUniqueEmails(s)
+	//s := []string{"fxggfzk.fo.q+e@uxbeyetxc.com", "fxggfzk.fo.q+h@uxbeyetxc.com", "uv+mw.lkw+ybe@yppz.com"}
+	s := "bccb"
+	res := dp.CountPalindromicSubsequences(s)
 	println(res)
 }

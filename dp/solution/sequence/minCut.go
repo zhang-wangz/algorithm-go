@@ -9,6 +9,7 @@ func MinCut(s string) int {
 	}
 	r := make([]int, len(s))
 	for i := 0; i < len(s); i++ {
+		// 设置最大切割数
 		r[i] = i
 		for j := 0; j <= i; j++ {
 			if isPalindrome(s, j, i) {

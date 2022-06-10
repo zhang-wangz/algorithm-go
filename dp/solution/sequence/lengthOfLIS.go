@@ -14,6 +14,7 @@ func lengthOfLIS(nums []int) int {
 	r := make([]int, len(nums)+1)
 	maxN := 1
 	for i := 0; i < len(nums); i++ {
+		// 设置子序列为0
 		r[i] = 1
 		for j := 0; j < i; j++ {
 			if nums[j] < nums[i] {
