@@ -64,8 +64,9 @@ algorithm go
 
 ## 相关仓库
 
-- [algorithm-go](https://github.com/zhang-wangz/algorithm-go) — 💌 write algorithm using go
+- [algorithm-go](https://github.com/zhang-wangz/algorithm-go) - 💌 write algorithm using go
 - [greyireland/algorithm-pattern](https://github.com/greyireland/algorithm-pattern) - 🍬 a algorithm pattern 
+- [LogicStack-LeetCode](https://github.com/SharingSource/LogicStack-LeetCode) - 😄 a good repo! 三叶姐yyds
 
 ## 维护者
 [@Athony Wang](https://github.com/zhang-wangz)
