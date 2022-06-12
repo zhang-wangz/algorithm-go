@@ -38,9 +38,13 @@ func MinFlipsMonoIncr2(s string) int {
 				r = mid
 			}
 		}
-		// 找出所有的序列，获得其中最长的
-		g[r] = t
-		Max = max(Max, r)
+		// l-1是小于等于t的最大len，len+1是当前元素的LIS
+		le := l - 1 + 1
+		// 此时g[le] > t
+		// +1之后是最小下标
+		//g[le] = min(g[le],t)，可以简写成
+		g[le] = t
+		Max = max(Max, le)
 	}
 	return len(s) - Max
 }
