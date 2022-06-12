@@ -1,9 +1,15 @@
 package main
 
-import "algorithm-go/leetcode/solution"
+import (
+	"algorithm-go/leetcode/solution"
+)
 
 func main() {
-	s := "00110"
-	res := solution.MinFlipsMonoIncr(s)
+	//"fooleetbar"
+	//"f00l"
+	//[["o","0"]]
+	words := []string{"abc", "deq", "mee", "aqq", "dkd", "ccc"}
+	pattern := "abb"
+	res := solution.FindAndReplacePattern(words, pattern)
 	println(res)
 }
