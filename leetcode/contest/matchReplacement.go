@@ -6,43 +6,23 @@ package contest
 // 如果使用 mappings 替换 0 个或者若干个字符，可以将 sub 变成 s 的一个子字符串，请你返回 true，否则返回 false 。
 // 一个 子字符串 是字符串中连续非空的字符序列。
 
-// kmp
+// 枚举
 func MatchReplacement(s string, sub string, mappings [][]byte) bool {
-	m := len(s)
-	n := len(sub)
-	ma := map[byte][]byte{}
+	mp := ['z' + 1]['z' + 1]bool{}
 	for _, e := range mappings {
-		ma[e[0]] = append(ma[e[0]], e[1])
+		mp[e[0]][e[1]] = true
 	}
-	for i := 0; i+n-1 < m; i++ {
-		if isValid(s[i:i+n], sub, ma) {
-			return true
+next:
+	for i := len(sub); i <= len(s); i++ {
+		start := i - len(sub)
+		for idx, p := range s[start:i] {
+			if byte(p) != sub[idx] && !mp[sub[idx]][p] {
+				continue next
+			}
 		}
+		// 到这里说明匹配成功了
+		return true
 	}
+	// 还没返回成功说明没有成功的
 	return false
-}
-
-func isValid(a, b string, m map[byte][]byte) bool {
-	// 字符是否被替换
-	for i := 0; i < len(a); i++ {
-		if a[i] != b[i] {
-			// 可以替换
-			if len(m[b[i]]) != 0 {
-				var f bool
-				for j := 0; j < len(m[b[i]]); j++ {
-					if m[b[i]][j] == a[i] {
-						f = true
-						break
-					}
-				}
-				if !f {
-					return false
-				}
-			}
-			if _, ok := m[b[i]]; !ok {
-				return false
-			}
-		}
-	}
-	return true
 }
