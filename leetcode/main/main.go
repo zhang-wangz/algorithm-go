@@ -6,7 +6,7 @@ import (
 
 func main() {
 	//"fooleetbar"
-	//"f00l"
+	//"f00l"s
 	//[["o","0"]]
 	//words := []string{"abc", "deq", "mee", "aqq", "dkd", "ccc"}
 	//pattern := "abb"

@@ -1,8 +1,8 @@
 package _022_05
 
 // https://leetcode.cn/problems/kth-smallest-number-in-multiplication-table/solution/dong-tu-yan-shi-by-xiaohu9527-3k7s/
-// 几乎每一个人都用 乘法表。但是你能在乘法表中快速找到第k小的数字吗？
-// 给定高度m 、宽度n 的一张 m * n的乘法表，以及正整数k，你需要返回表中第k 小的数字。
+// 几乎每一个人都用乘法表。但是你能在乘法表中快速找到第k小的数字吗？
+// 给定高度m、宽度n 的一张m * n的乘法表，以及正整数k，你需要返回表中第k小的数字。
 
 func findKthNumber(m int, n int, k int) int {
 	l := 1
@@ -21,7 +21,7 @@ func findKthNumber(m int, n int, k int) int {
 		}
 	}
 	// 获取第一个大于等于k的值，不是l就是r
-	// 先判断l，因为l相对r小，这题需要获w取左范围
+	// 先判断l，因为l相对r小，这题需要获取左范围
 	if count(m, n, l) >= k {
 		return l
 	}
