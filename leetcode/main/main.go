@@ -13,7 +13,6 @@ func main() {
 	// [62,100,4]
 	//2
 	nums := []int{1, 3, 1}
-	k := 1
-	res := solution.SmallestDistancePair(nums, k)
+	res := solution.FindPairs(nums, 2)
 	println(res)
 }
