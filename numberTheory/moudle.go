@@ -4,7 +4,7 @@ package numbertheory
 // 乘方快速幂
 func QuickPowandMod(m, n, p int) int {
 	ans := 1
-	for n >= 0 {
+	for n > 0 {
 		if n&1 != 0 {
 			ans = (ans * (m % p)) % p
 		}
@@ -18,26 +18,44 @@ func QuickPowandMod(m, n, p int) int {
 
 // 方阵快速幂
 // 两个矩阵相乘，n*m,m*p
-func matricmul(nums1, nums2 [][]int) [][]int {
-	n := len(nums1)
-	m := len(nums2)
-	p := len(nums2[0])
+func matmul(nums1, nums2 [][]int, n, m, p int) [][]int {
+	// n := len(nums1)
+	// m := len(nums2)
+	// p := len(nums2[0])
 	nums3 := make([][]int, n)
 	for i := 0; i < len(nums3); i++ {
 		nums3[i] = make([]int, p)
 	}
+	// 第一个矩阵的一行中的每个数去乘第二个矩阵的每一行
 	for i := 0; i < n; i++ {
-		for j := 0; j < p; j++ {
-			sum := 0
-			for k := 0; k < m; k++ {
-				sum += nums1[i][k] * nums2[k][j]
+		for j := 0; j < m; j++ {
+			if nums1[i][j] != 0 {
+				for k := 0; k < p; k++ {
+					nums3[i][k] = nums1[i][j]*nums2[j][k] + nums3[i][k]
+				}
 			}
-			nums3[i][j] = sum
 		}
 	}
 	return nums3
 }
 
-func matrixQucikMod() {
-
+// p阶矩阵求n次幂
+func matrixQuickPow(nums [][]int, p int, n int) [][]int {
+	ans := make([][]int, p)
+	for i := 0; i < p; i++ {
+		ans[i] = make([]int, p)
+		ans[i][i] = 1
+	}
+	for n > 0 {
+		if n&1 == 1 {
+			ans = matmul(ans, nums, p, p, p)
+		}
+		n >>= 1
+		nums = matmul(nums, nums, p, p, p)
+	}
+	return ans
 }
+
+// solution mat= [[0,1],[1,1]]
+// [fn-1, fn] = mat的n-1 * [f0,f1]
+// 与斐波那契数列有关
