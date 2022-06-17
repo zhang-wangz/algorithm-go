@@ -8,6 +8,7 @@ func singleNumber3(nums []int) []int {
 		res = res ^ nums[i]
 	}
 	// res = a ^ b
+	// 找到最接近找的位置
 	r := []int{res, res}
 	// 根据最后一位1的位置进行进行区分
 	// 获取最后一个1
