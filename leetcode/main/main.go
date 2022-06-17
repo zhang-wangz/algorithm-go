@@ -12,7 +12,7 @@ func main() {
 	//pattern := "abb"
 	// [62,100,4]
 	//2
-	nums := []int{1, 3, 1}
-	res := solution.FindPairs(nums, 2)
-	println(res)
+	nums := []int{1, 0, 0, 0, 0, 0, 0}
+	solution.DuplicateZeros(nums)
+	println(nums)
 }
