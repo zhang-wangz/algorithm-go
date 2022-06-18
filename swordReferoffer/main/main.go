@@ -3,6 +3,6 @@ package main
 import "algorithm-go/swordReferoffer"
 
 func main() {
-	res := swordReferoffer.CountBits(2)
+	res := swordReferoffer.ThreeSum([]int{-1, 0, 1, 2, -1, -4})
 	println(res)
 }

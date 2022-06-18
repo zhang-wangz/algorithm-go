@@ -2,6 +2,7 @@ package main
 
 import (
 	"algorithm-go/leetcode/solution"
+	"algorithm-go/linkedList"
 )
 
 func main() {
@@ -13,6 +14,13 @@ func main() {
 	// [62,100,4]
 	//2
 	nums := []int{1, 0, 0, 0, 0, 0, 0}
-	solution.DuplicateZeros(nums)
+	a := &linkedList.ListNode{Val: 1}
+	a.Next = &linkedList.ListNode{
+		Val: 3,
+		Next: &linkedList.ListNode{
+			Val:  4,
+			Next: a,
+		}}
+	solution.Insert(a, 2)
 	println(nums)
 }
