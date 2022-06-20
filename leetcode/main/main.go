@@ -2,7 +2,6 @@ package main
 
 import (
 	"algorithm-go/binaryTree"
-	"algorithm-go/leetcode/solution"
 )
 
 func main() {
@@ -28,6 +27,6 @@ func main() {
 	c := &binaryTree.Node{Val: -5}
 	a.Left = b
 	a.Right = c
-	res := solution.FindFrequentTreeSum(a)
-	println(res)
+	//res := solution.FindFrequentTreeSum(a)
+	println(1000000009)
 }
