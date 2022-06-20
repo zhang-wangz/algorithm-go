@@ -46,7 +46,7 @@ algorithm go
 |       kmp        |    kmp     |   ❌    |
 |     Leetcode     |    力扣    |   ✅    |
 |   Linked list    |    链表    |   ✅    |
-|  Number theory   |    数论    |   ❌    |
+|  Number theory   |    数论    |   ✅    |
 |    Origin oj     |   原创oj   |   ✅    |
 |      Queue       |    队列    |   ✅    |
 |    Recursion     |    递归    |   ✅    |
