@@ -51,10 +51,10 @@ func (node *SegmentNode) pushup() {
 
 func (node *SegmentNode) pushdown(len int) {
 	if node.Ls == nil {
-		node.Ls = &SegmentNode{nil, nil, 0, 0}
+		node.Ls = new(SegmentNode)
 	}
 	if node.Rs == nil {
-		node.Rs = &SegmentNode{nil, nil, 0, 0}
+		node.Rs = new(SegmentNode)
 	}
 	if node.Add == 0 {
 		return
@@ -79,9 +79,10 @@ type RangeModule struct {
 }
 
 func Constructor() RangeModule {
-	return RangeModule{&SegmentNode{nil, nil, 0, 0}}
+	return RangeModule{new(SegmentNode)}
 }
 
+// 范围从1到N
 func (node *RangeModule) AddRange(left int, right int) {
 	node.Root.update(1, N, left, right-1, 1)
 }
