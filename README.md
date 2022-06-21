@@ -43,7 +43,7 @@ algorithm go
 |  Discretization  |   离散化   |   ❌    |
 |        dp        |  动态规划  |   ✅    |
 |     Geometry     |    几何    |   ❌    |
-|       kmp        |    kmp     |   ❌    |
+|       kmp        |    kmp     |   ✅    |
 |     Leetcode     |    力扣    |   ✅    |
 |   Linked list    |    链表    |   ✅    |
 |  Number theory   |    数论    |   ✅    |
