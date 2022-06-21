@@ -1,7 +1,10 @@
 package main
 
+import "algorithm-go/kmp"
+
 func main() {
-	a := 2 - 1i
-	b := 2 + 1i
-	println(int(imag(a * b)))
+	a := "ABABABCAA"
+	b := "ABABC"
+	next := kmp.GetNext(b)
+	kmp.Kmp(next, b, a)
 }
