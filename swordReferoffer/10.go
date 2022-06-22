@@ -4,5 +4,15 @@ package swordReferoffer
 // 因为数据范围包括负数，所以不能用滑动窗口
 
 func subarraySum(nums []int, k int) int {
-
+	cnt := 0
+	presum := 0
+	mp := map[int]int{
+		0: 1,
+	}
+	for i := 0; i < len(nums); i++ {
+		presum += nums[i]
+		cnt += mp[presum-k]
+		mp[presum] = mp[presum] + 1
+	}
+	return cnt
 }
