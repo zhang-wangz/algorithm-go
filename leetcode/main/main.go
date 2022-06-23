@@ -1,8 +1,6 @@
 package main
 
-import (
-	"algorithm-go/binaryTree"
-)
+import "algorithm-go/leetcode/solution"
 
 func main() {
 	//"fooleetbar"
@@ -22,11 +20,14 @@ func main() {
 	//	}}
 	//solution.Insert(a, 2)
 	//res := map[int][]int{}
-	a := &binaryTree.Node{Val: 5}
-	b := &binaryTree.Node{Val: 2}
-	c := &binaryTree.Node{Val: -5}
-	a.Left = b
-	a.Right = c
+	//a := &binaryTree.Node{Val: 5}
+	//b := &binaryTree.Node{Val: 2}
+	//c := &binaryTree.Node{Val: -5}
+	//a.Left = b
+	//a.Right = c
 	//res := solution.FindFrequentTreeSum(a)
-	println(1000000009)
+	// "ababababab"
+	//["ababa","babab"]
+	res := solution.FindSubstring("ababaab", []string{"ab", "ba", "ba"})
+	println(res)
 }
