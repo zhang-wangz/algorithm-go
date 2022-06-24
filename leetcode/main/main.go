@@ -1,7 +1,5 @@
 package main
 
-import "algorithm-go/leetcode/solution"
-
 func main() {
 	//"fooleetbar"
 	//"f00l"s
@@ -28,6 +26,5 @@ func main() {
 	//res := solution.FindFrequentTreeSum(a)
 	// "ababababab"
 	//["ababa","babab"]
-	res := solution.FindSubstring("ababaab", []string{"ab", "ba", "ba"})
-	println(res)
+	//res := solution.FindSubstring("ababaab", []string{"ab", "ba", "ba"})
 }
