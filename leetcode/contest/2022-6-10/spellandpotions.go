@@ -1,4 +1,4 @@
-package contest
+package _022_6_10
 
 import "sort"
 

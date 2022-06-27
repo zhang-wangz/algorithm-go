@@ -1,4 +1,4 @@
-package contest
+package _022_6_10
 
 // https://leetcode.cn/problems/match-substring-after-replacement/
 // 给你两个字符串 s 和 sub 。同时给你一个二维字符数组 mappings ，
