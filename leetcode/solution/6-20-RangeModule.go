@@ -80,7 +80,7 @@ type RangeModule struct {
 	Root *SegmentNode
 }
 
-func Constructor() RangeModule {
+func Constructor1() RangeModule {
 	return RangeModule{&SegmentNode{nil, nil, 0, 0}}
 }
 

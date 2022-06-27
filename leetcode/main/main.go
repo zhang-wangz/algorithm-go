@@ -1,5 +1,7 @@
 package main
 
+import "algorithm-go/leetcode/solution"
+
 func main() {
 	//"fooleetbar"
 	//"f00l"s
@@ -27,4 +29,8 @@ func main() {
 	// "ababababab"
 	//["ababa","babab"]
 	//res := solution.FindSubstring("ababaab", []string{"ab", "ba", "ba"})
+	ans := solution.Constructor(2, []int{})
+	ans.Pick()
+	a := map[int]bool{}
+	println(a[0])
 }
