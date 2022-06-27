@@ -3,6 +3,6 @@ package main
 import "algorithm-go/swordReferoffer"
 
 func main() {
-	res := swordReferoffer.ThreeSum([]int{-1, 0, 1, 2, -1, -4})
+	res := swordReferoffer.ValidPalindrome("ebc bb e cec abba cec bb cbe")
 	println(res)
 }
