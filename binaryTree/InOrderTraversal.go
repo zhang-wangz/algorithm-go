@@ -19,3 +19,8 @@ func InOrder(root *Node) []int {
 	}
 	return res
 }
+
+// Morris 空间复杂下降到1
+func Morris(root *Node) {
+
+}

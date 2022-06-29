@@ -16,7 +16,7 @@ type LRUCache struct {
 	tail *Snode
 }
 
-func Constructor(capacity int) LRUCache {
+func Constructor3(capacity int) LRUCache {
 	head := &Snode{val: -1}
 	tail := &Snode{val: -1}
 	head.next = tail

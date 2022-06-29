@@ -8,7 +8,7 @@ type Solution struct {
 	bound int
 }
 
-func Constructor(n int, blacklist []int) Solution {
+func Constructor2(n int, blacklist []int) Solution {
 	m := len(blacklist)
 	bound := n - m
 	black := map[int]bool{}

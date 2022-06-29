@@ -3,14 +3,11 @@ package main
 import "algorithm-go/offer"
 
 func main() {
-	lru := offer.Constructor(2)
-	lru.Put(1, 0)
-	lru.Put(2, 2)
-	lru.Get(1)
-	lru.Put(3, 3)
-	lru.Get(2)
-	lru.Put(4, 4)
-	lru.Get(1)
-	lru.Get(3)
-	lru.Get(4)
+	root := &offer.TreeNode{Val: 2}
+	root.Left = &offer.TreeNode{Val: -1}
+	//root.Right = &offer.TreeNode{Val: 3}
+	//root.Left.Right = &offer.TreeNode{Val: 5}
+	//root.Right.Right = &offer.TreeNode{Val: 4}
+	//offer.RightSideView(root)
+	offer.MaxPathSum(root)
 }
