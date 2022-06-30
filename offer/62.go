@@ -5,8 +5,8 @@ type Trie struct {
 	isEnd bool
 }
 
-// Constructor /** Initialize your data structure here. */
-func Constructor() Trie {
+// Constructor10 /** Initialize your data structure here. */
+func Constructor10() Trie {
 	return Trie{child: [26]*Trie{}, isEnd: false}
 }
 
