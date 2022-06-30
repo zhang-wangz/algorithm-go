@@ -1,4 +1,4 @@
-package offer
+package _1_60
 
 func sumNumbers(root *TreeNode) int {
 	sum := 0

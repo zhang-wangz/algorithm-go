@@ -73,7 +73,7 @@ func (node *SegmentNode) pushdown(len int) {
 }
 
 const (
-	N = 1000000010
+	N1 = 1000000010
 )
 
 type RangeModule struct {

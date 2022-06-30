@@ -1,4 +1,4 @@
-package offer
+package _1_60
 
 func RightSideView(root *TreeNode) []int {
 	ans := make([]int, 0)

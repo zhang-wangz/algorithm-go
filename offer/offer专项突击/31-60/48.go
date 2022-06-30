@@ -1,4 +1,4 @@
-package offer
+package _1_60
 
 import (
 	"strconv"
@@ -8,7 +8,7 @@ import (
 type Codec struct {
 }
 
-func Constructor() (_ Codec) {
+func Constructor7() (_ Codec) {
 	return
 }
 

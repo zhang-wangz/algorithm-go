@@ -1,4 +1,4 @@
-package offer
+package _1_60
 
 func isAlienSorted(words []string, order string) bool {
 	morder := map[byte]int{}

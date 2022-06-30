@@ -1,4 +1,4 @@
-package offer
+package _1_60
 
 func asteroidCollision(asteroids []int) []int {
 	stack := make([]int, 0)

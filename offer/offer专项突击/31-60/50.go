@@ -1,4 +1,4 @@
-package offer
+package _1_60
 
 func pathSum(root *TreeNode, targetSum int) int {
 	if root == nil {

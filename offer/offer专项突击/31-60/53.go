@@ -1,4 +1,4 @@
-package offer
+package _1_60
 
 func inorderSuccessor(root *TreeNode, p *TreeNode) *TreeNode {
 	var st []*TreeNode
