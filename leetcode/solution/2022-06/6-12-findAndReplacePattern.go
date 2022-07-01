@@ -1,4 +1,4 @@
-package solution
+package _022_06
 
 // https://leetcode.cn/problems/find-and-replace-pattern/
 

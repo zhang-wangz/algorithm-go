@@ -3,5 +3,5 @@ package main
 import "algorithm-go/leetcode/solution"
 
 func main() {
-	solution.NumPrimeArrangements(5)
+	solution.DiffWaysToCompute("2-1-1")
 }

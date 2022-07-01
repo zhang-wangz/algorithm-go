@@ -1,4 +1,4 @@
-package solution
+package _022_06
 
 // https://leetcode.cn/problems/height-checker/
 // 学校打算为全体学生拍一张年度纪念照。根据要求，学生需要按照 非递减 的高度顺序排成一行。

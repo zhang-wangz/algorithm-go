@@ -1,4 +1,4 @@
-package solution
+package _022_06
 
 //  https://leetcode.cn/problems/duplicate-zeros/
 // 给你一个长度固定的整数数组arr，请你将该数组中出现的每个零都复写一遍，并将其余的元素向右平移。

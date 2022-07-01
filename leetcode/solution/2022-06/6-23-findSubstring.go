@@ -1,4 +1,4 @@
-package solution
+package _022_06
 
 // FindSubstring https://leetcode.cn/problems/substring-with-concatenation-of-all-words/
 //  给定一个字符串s和一些长度相同的单词words 。找出 s 中恰好可以由words 中所有单词串联形成的子串的起始位置。
