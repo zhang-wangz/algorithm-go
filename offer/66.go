@@ -10,7 +10,7 @@ type tr struct {
 }
 
 // Constructor /** Initialize your data structure here. */
-func Constructor() MapSum {
+func Constructor1() MapSum {
 	return MapSum{
 		&tr{
 			child: [26]*tr{},
