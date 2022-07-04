@@ -1,5 +1,7 @@
 package sort
 
+import "math/rand"
+
 // 分治思想快排
 func QuickSort(nums []int) []int {
 	quickSort(nums, 0, len(nums)-1)
@@ -18,7 +20,9 @@ func quickSort(nums []int, start, end int) {
 }
 
 func partition(nums []int, start, end int) int {
-	p := nums[end]
+	p := rand.Intn(end-start+1) + start
+	nums[p], nums[end] = nums[end], nums[p]
+	p = nums[end]
 	i := start
 	for j := start; j < end; j++ {
 		if nums[j] < p {

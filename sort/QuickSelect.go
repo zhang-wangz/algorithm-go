@@ -1,7 +1,11 @@
 package sort
 
+import "math/rand"
+
 func QuickSelect(nums []int, start, end int, tidx int) {
-	p := nums[end]
+	p := rand.Intn(end-start+1) + start
+	nums[p], nums[end] = nums[end], nums[p]
+	p = nums[end]
 	i, j := start, start
 	for j < end {
 		if nums[j] < p {
