@@ -1,4 +1,4 @@
-package main
+package _1_78
 
 func peakIndexInMountainArray(arr []int) int {
 	l, r := 0, len(arr)-1

@@ -1,4 +1,4 @@
-package main
+package _1_78
 
 func mergeKLists(lists []*ListNode) *ListNode {
 	if len(lists) == 0 {

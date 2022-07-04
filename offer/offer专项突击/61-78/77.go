@@ -1,4 +1,4 @@
-package main
+package _1_78
 
 type ListNode struct {
 	Val  int
@@ -6,7 +6,7 @@ type ListNode struct {
 }
 
 // merge
-func sortList(head *ListNode) *ListNode {
+func SortList(head *ListNode) *ListNode {
 	if head == nil || head.Next == nil {
 		return head
 	}
@@ -18,8 +18,8 @@ func sortList(head *ListNode) *ListNode {
 	}
 	tail := slow.Next
 	slow.Next = nil
-	l := sortList(head)
-	r := sortList(tail)
+	l := SortList(head)
+	r := SortList(tail)
 	ans := mergeList(l, r)
 	return ans
 }

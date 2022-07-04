@@ -1,4 +1,4 @@
-package main
+package _1_78
 
 type MapSum struct {
 	*tr

@@ -1,4 +1,4 @@
-package main
+package _1_78
 
 func mySqrt(x int) int {
 	l, r := 0, x+1

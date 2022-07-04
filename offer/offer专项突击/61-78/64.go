@@ -1,4 +1,4 @@
-package main
+package _1_78
 
 type trie struct {
 	child [26]*trie

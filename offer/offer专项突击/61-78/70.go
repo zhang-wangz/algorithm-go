@@ -1,4 +1,4 @@
-package main
+package _1_78
 
 // 非规则数的左边，偶数与+1的值相等，奇数与-1的值相等
 func singleNonDuplicate(nums []int) int {
