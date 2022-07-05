@@ -1,4 +1,4 @@
-package main
+package dfs_79_87
 
 import "sort"
 

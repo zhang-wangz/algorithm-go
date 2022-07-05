@@ -1,4 +1,4 @@
-package main
+package dfs_79_87
 
 func combine(n int, k int) (ans [][]int) {
 	path := make([]int, 0)

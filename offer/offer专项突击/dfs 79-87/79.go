@@ -1,4 +1,4 @@
-package main
+package dfs_79_87
 
 // 选择元素，然后dfs，然后删除元素
 // 回溯主要是画决策树
