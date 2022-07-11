@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func minCostClimbingStairs(cost []int) int {
 	dp := make([]int, len(cost)+1)

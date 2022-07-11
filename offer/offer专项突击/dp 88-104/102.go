@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 // 找出0-i中是否有存在总和为neg的存在
 func findTargetSumWays2(nums []int, target int) (ans int) {

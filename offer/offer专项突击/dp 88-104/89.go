@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func rob(nums []int) int {
 	pre := nums[0]

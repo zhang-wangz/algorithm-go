@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 // i-1与i+j-1的值相等
 // j-1与i+j-1相等

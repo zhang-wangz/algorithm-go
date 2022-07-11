@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func rob2(nums []int) int {
 	n := len(nums)

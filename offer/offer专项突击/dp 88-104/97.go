@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func numDistinct(s string, t string) int {
 	m, n := len(s), len(t)

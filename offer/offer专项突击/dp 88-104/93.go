@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func lenLongestFibSubseq(arr []int) (ans int) {
 	n := len(arr)

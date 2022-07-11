@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func combinationSum4(nums []int, target int) int {
 	dp := make([]int, target+1)

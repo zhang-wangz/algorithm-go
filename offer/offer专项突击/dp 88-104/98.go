@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func uniquePaths(m int, n int) int {
 	dp := make([][]int, m)

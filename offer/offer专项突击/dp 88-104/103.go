@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func coinChange(coins []int, amount int) int {
 	dp := make([]int, amount+1)

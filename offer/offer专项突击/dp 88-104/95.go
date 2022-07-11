@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func longestCommonSubsequence(text1 string, text2 string) int {
 	m, n := len(text1), len(text2)

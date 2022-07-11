@@ -1,4 +1,4 @@
-package main
+package dp_88_104
 
 func minimumTotal(triangle [][]int) int {
 	if len(triangle) == 0 || len(triangle[0]) == 0 {
