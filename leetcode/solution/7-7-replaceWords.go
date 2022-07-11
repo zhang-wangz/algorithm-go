@@ -2,24 +2,24 @@ package solution
 
 import "strings"
 
-type trie struct {
-	child [26]*trie
+type trie1 struct {
+	child [26]*trie1
 	isEnd bool
 }
 
-func (tr *trie) insert(word string) {
+func (tr *trie1) insert(word string) {
 	node := tr
 	for i := 0; i < len(word); i++ {
 		ch := word[i] - 'a'
-		if node.child[ch] != nil {
-			node.child[ch] = &trie{}
+		if node.child[ch] == nil {
+			node.child[ch] = &trie1{}
 		}
 		node = node.child[ch]
 	}
 	node.isEnd = true
 }
 
-func (tr *trie) search(word string) (f bool, ans string) {
+func (tr *trie1) search(word string) (f bool, ans string) {
 	node := tr
 
 	for i := 0; i < len(word); i++ {
@@ -37,7 +37,7 @@ func (tr *trie) search(word string) (f bool, ans string) {
 }
 
 func replaceWords(dictionary []string, sentence string) string {
-	t := &trie{}
+	t := &trie1{}
 	for _, w := range dictionary {
 		t.insert(w)
 	}

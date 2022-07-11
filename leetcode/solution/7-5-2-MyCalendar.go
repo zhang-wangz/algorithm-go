@@ -8,7 +8,7 @@ type MyCalendar2 struct {
 	root *MyNode
 }
 
-func Constructor() MyCalendar2 {
+func Constructo1r() MyCalendar2 {
 	return MyCalendar2{&MyNode{}}
 }
 
