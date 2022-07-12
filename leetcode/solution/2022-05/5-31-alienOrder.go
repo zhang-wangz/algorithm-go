@@ -2,7 +2,7 @@ package _022_05
 
 // https://leetcode.cn/problems/Jf1JuT/
 
-// 也可以使用dfs来找环
+// AlienOrder 也可以使用dfs来找环
 // visit[],0没有遍历，1遍历中，2完成遍历，如果dfs一个点的时候发现一个为1的点，则判定成环，return false
 func AlienOrder(words []string) string {
 	// 记录点
