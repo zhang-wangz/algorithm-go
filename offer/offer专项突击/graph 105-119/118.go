@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 // 并查集
 // 其实是找第一条让其成环的边

@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 func allPathsSourceTarget(graph [][]int) (ans [][]int) {
 	path := []int{0}

@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 // 并查
 // 最长连续序列且未排序

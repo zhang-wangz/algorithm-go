@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 func openLock(deadends []string, target string) int {
 	const start = "0000"

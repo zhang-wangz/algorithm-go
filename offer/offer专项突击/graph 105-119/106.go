@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 func isBipartite2(graph [][]int) bool {
 	n := len(graph)

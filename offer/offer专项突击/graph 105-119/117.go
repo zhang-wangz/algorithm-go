@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 func numSimilarGroups(strs []string) int {
 	parent := make([]int, len(strs))

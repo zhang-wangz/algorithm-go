@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 import "math"
 

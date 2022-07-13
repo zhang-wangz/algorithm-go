@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 // bfs
 func calcEquation(equations [][]string, values []float64, queries [][]string) (ans []float64) {

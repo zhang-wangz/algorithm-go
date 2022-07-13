@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 // 并查集
 func findCircleNum3(isConnected [][]int) int {

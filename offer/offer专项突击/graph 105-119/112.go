@@ -1,4 +1,4 @@
-package main
+package graph_105_119
 
 func longestIncreasingPath(matrix [][]int) int {
 	if len(matrix) == 0 || len(matrix[0]) == 0 {
