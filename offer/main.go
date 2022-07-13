@@ -1,5 +1,5 @@
 package main
 
 func main() {
-	//alienOrder([]string{"ac", "ab", "zc", "zb"})
+	longestConsecutive([]int{100, 4, 200, 1, 3, 2})
 }
