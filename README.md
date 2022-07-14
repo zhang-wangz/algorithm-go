@@ -60,7 +60,8 @@ algorithm go
 | typo sort | 拓扑排序 | belong sort  ✅ |
 | mingenTree | 最小生成树 | belong origin oj  ✅ |
 | Union-find sets | 并查集 | belong origin oj  ✅ |
-- 剑指offer区 目前在写专项突击，后续add offer1和offer2版
+- 剑指offer区 ✅
+- sql专区入门 ❌ 进行.ing
 
 
 ## 相关仓库
