@@ -1,23 +1,23 @@
 package solution
 
-type trie struct {
-	child [26]*trie
+type trie2 struct {
+	child [26]*trie2
 	isEnd bool
 }
 
-func (tr *trie) insert(word string) {
+func (tr *trie2) insert(word string) {
 	node := tr
 	for i := 0; i < len(word); i++ {
 		ch := word[i] - 'a'
 		if node.child[ch] == nil {
-			node.child[ch] = &trie{}
+			node.child[ch] = &trie2{}
 		}
 		node = node.child[ch]
 	}
 	node.isEnd = true
 }
 
-func (tr *trie) search(word string) bool {
+func (tr *trie2) search(word string) bool {
 	node := tr
 	for i := 0; i < len(word); i++ {
 		ch := word[i] - 'a'
@@ -30,11 +30,11 @@ func (tr *trie) search(word string) bool {
 }
 
 type MagicDictionary struct {
-	tr *trie
+	tr *trie2
 }
 
-func Constructor() MagicDictionary {
-	return MagicDictionary{tr: &trie{child: [26]*trie{}, isEnd: false}}
+func Constructor1() MagicDictionary {
+	return MagicDictionary{tr: &trie2{child: [26]*trie2{}, isEnd: false}}
 }
 
 func (this *MagicDictionary) BuildDict(dictionary []string) {
