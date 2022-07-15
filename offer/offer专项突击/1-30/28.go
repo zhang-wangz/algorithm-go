@@ -28,6 +28,8 @@ func dfs(root *Node) *Node {
 				next.Prev = childLast
 			}
 			cur.Child = nil
+			// 连接后把ChildLast返回
+			// 当child里面的最后一个child节点也有child需要靠这个进行连接
 			last = childLast
 		} else {
 			last = cur

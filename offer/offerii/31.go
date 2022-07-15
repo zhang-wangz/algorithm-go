@@ -1,4 +1,4 @@
-package offerii
+package main
 
 // https://leetcode.cn/problems/zhan-de-ya-ru-dan-chu-xu-lie-lcof/
 func validateStackSequences(pushed []int, popped []int) bool {
