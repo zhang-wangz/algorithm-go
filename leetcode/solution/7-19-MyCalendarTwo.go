@@ -1,8 +1,8 @@
 package solution
 
-// https://leetcode.cn/problems/my-calendar-i/
+import "math"
 
-type SegmentNode2 struct {
+type SegmentNode struct {
 	Ls, Rs *SegmentNode
 	// add 代表懒标记
 	Add int
@@ -10,7 +10,7 @@ type SegmentNode2 struct {
 	Val int
 }
 
-func (node *SegmentNode2) update(lc int, rc int, l int, r int, v int) {
+func (node *SegmentNode) update(lc int, rc int, l int, r int, v int) {
 	if l <= lc && rc <= r {
 		node.Add += v
 		node.Val += v
@@ -27,7 +27,7 @@ func (node *SegmentNode2) update(lc int, rc int, l int, r int, v int) {
 	node.pushup()
 }
 
-func (node *SegmentNode2) query(lc int, rc int, l int, r int) int {
+func (node *SegmentNode) query(lc int, rc int, l int, r int) int {
 	if l <= lc && rc <= r {
 		return node.Val
 	}
@@ -38,27 +38,23 @@ func (node *SegmentNode2) query(lc int, rc int, l int, r int) int {
 	}
 	if r > mid {
 		right := node.Rs.query(mid+1, rc, l, r)
-		if right >= ans {
+		if right > ans {
 			ans = right
 		}
 	}
 	return ans
 }
 
-func (node *SegmentNode2) pushup() {
-	if node.Ls.Val > node.Rs.Val {
-		node.Val = node.Ls.Val
-	} else {
-		node.Val = node.Rs.Val
-	}
+func (node *SegmentNode) pushup() {
+	node.Val = int(math.Max(float64(node.Ls.Val), float64(node.Rs.Val)))
 }
 
-func (node *SegmentNode2) pushdown() {
+func (node *SegmentNode) pushdown() {
 	if node.Ls == nil {
-		node.Ls = &SegmentNode{nil, nil, 0, 0}
+		node.Ls = new(SegmentNode)
 	}
 	if node.Rs == nil {
-		node.Rs = &SegmentNode{nil, nil, 0, 0}
+		node.Rs = new(SegmentNode)
 	}
 	if node.Add == 0 {
 		return
@@ -71,21 +67,27 @@ func (node *SegmentNode2) pushdown() {
 }
 
 const (
-	N2 = 1000000000
+	N = 1000000010
 )
 
-type MyCalendar struct {
+type MyCalendarTwo struct {
 	*SegmentNode
 }
 
-func Constructor2() MyCalendar {
-	return MyCalendar{&SegmentNode{Rs: nil, Ls: nil, Add: 0, Val: 0}}
+func Constructor() MyCalendarTwo {
+	return MyCalendarTwo{&SegmentNode{}}
 }
 
-func (node *MyCalendar) Book(start int, end int) bool {
-	if node.query(0, N2, start, end-1) == 1 {
+func (this *MyCalendarTwo) Book(start int, end int) bool {
+	if this.query(0, N, start, end-1) == 2 {
 		return false
 	}
-	node.update(0, N2, start, end-1, 1)
+	this.update(0, N, start, end-1, 1)
 	return true
 }
+
+/**
+ * Your MyCalendarTwo object will be instantiated and called as such:
+ * obj := Constructor();
+ * param_1 := obj.Book(start,end);
+ */

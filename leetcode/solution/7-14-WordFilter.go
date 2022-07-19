@@ -72,7 +72,7 @@ type WordFilter struct {
 	word []string
 }
 
-func Constructor(words []string) WordFilter {
+func Constructor3(words []string) WordFilter {
 	return WordFilter{&trie{}, words}
 }
 
