@@ -1,21 +1,40 @@
 package main
 
-func numWays(n int) int {
-	mod := 1000000007
-	f1 := 1
-	f2 := 1
-	if n == 1 {
-		return 1
-	}
-	if n == 0 {
-		return 1
-	}
-	if n == 2 {
-		return 2
-	}
-	for n-1 > 0 {
-		f1, f2 = f2%mod, (f1+f2)%mod
-		n--
-	}
-	return f2 % mod
+type CQueue struct {
+	sk1 []int // 头
+	sk2 []int // 尾
 }
+
+func Constructor() CQueue {
+	return CQueue{sk1: make([]int, 0), sk2: make([]int, 0)}
+}
+
+func (this *CQueue) AppendTail(value int) {
+	for len(this.sk2) != 0 {
+		this.sk1 = append(this.sk1, this.sk2[len(this.sk2)-1])
+		this.sk2 = this.sk2[:len(this.sk2)-1]
+	}
+	this.sk1 = append(this.sk1, value)
+}
+
+func (this *CQueue) DeleteHead() int {
+	for len(this.sk1) != 0 {
+		this.sk2 = append(this.sk2, this.sk1[len(this.sk1)-1])
+		this.sk1 = this.sk1[:len(this.sk1)-1]
+	}
+	var top int
+	if len(this.sk2) == 0 {
+		return -1
+	} else {
+		top = this.sk2[len(this.sk2)-1]
+		this.sk2 = this.sk2[:len(this.sk2)-1]
+	}
+	return top
+}
+
+/**
+ * Your CQueue object will be instantiated and called as such:
+ * obj := Constructor();
+ * obj.AppendTail(value);
+ * param_2 := obj.DeleteHead();
+ */
