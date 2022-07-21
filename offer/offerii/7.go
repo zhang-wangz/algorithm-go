@@ -6,9 +6,31 @@ type TreeNode struct {
 	Right *TreeNode
 }
 
-// 迭代怎么写？
+// 迭代
 func buildTree2(preorder []int, inorder []int) *TreeNode {
-	return nil
+	if len(preorder) == 0 {
+		return nil
+	}
+	root := &TreeNode{Val: preorder[0]}
+	q := []*TreeNode{root}
+	inorderIdx := 0
+	for i := 1; i < len(preorder); i++ {
+		preVal := preorder[i]
+		node := q[len(q)-1]
+		if node.Val != inorder[inorderIdx] {
+			node.Left = &TreeNode{Val: preVal}
+			q = append(q, node.Left)
+		} else {
+			for len(q) != 0 && q[len(q)-1].Val == inorder[inorderIdx] {
+				node = q[len(q)-1]
+				q = q[:len(q)-1]
+				inorderIdx++
+			}
+			node.Right = &TreeNode{Val: preVal}
+			q = append(q, node.Right)
+		}
+	}
+	return root
 }
 
 // 重建二叉树
