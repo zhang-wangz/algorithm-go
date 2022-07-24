@@ -1,10 +1,14 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"sort"
+)
 
 func main() {
-	//q := make([]int, 2, 9)
-	q := make([][]int, 2)
-	//q[1] = append(q[1], 2)
-	fmt.Println(len(q[1]))
+	s := sort.IntSlice{}
+	s = append(s, 2)
+	s = append(s, 98)
+	sort.Sort(sort.Reverse(s))
+	fmt.Println(s.Len())
 }

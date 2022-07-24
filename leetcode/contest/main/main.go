@@ -1,9 +1,7 @@
 package main
 
-import (
-	"algorithm-go/leetcode/contest/2022-7-17"
-)
-
 func main() {
-	_022_7_17.MinOperations([]int{2, 3, 2, 4, 3}, []int{9, 6, 9, 3, 15})
+	m := Constructor([]string{"kimchi", "miso", "sushi", "moussaka", "ramen", "bulgogi"}, []string{"korean", "japanese", "japanese", "greek", "japanese", "korean"}, []int{9, 12, 8, 15, 14, 7})
+	m.ChangeRating("sushi", 16)
+	m.HighestRated("japanese")
 }
