@@ -1,4 +1,4 @@
-package solution
+package _022_07
 
 type MyNode struct {
 	Left, Right *MyNode

@@ -1,4 +1,4 @@
-package solution
+package _022_07
 
 // https://leetcode.cn/problems/binary-tree-pruning/
 // Definition for a binary tree node.

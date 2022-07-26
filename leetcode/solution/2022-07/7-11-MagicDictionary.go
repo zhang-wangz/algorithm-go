@@ -1,4 +1,4 @@
-package solution
+package _022_07
 
 type trie2 struct {
 	child [26]*trie2

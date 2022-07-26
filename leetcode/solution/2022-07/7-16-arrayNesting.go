@@ -1,4 +1,4 @@
-package solution
+package _022_07
 
 func arrayNesting(nums []int) (ans int) {
 	n := len(nums)

@@ -1,4 +1,4 @@
-package solution
+package _022_07
 
 func sequenceReconstruction(nums []int, sequences [][]int) bool {
 	graph := map[int]map[int]bool{}

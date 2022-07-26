@@ -1,4 +1,4 @@
-package solution
+package _022_07
 
 // https://leetcode.cn/problems/contain-virus/
 // bfs搬砖题

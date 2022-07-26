@@ -1,4 +1,4 @@
-package solution
+package _022_07
 
 // https://leetcode.cn/problems/asteroid-collision/
 // 栈模拟
