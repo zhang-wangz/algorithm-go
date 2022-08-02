@@ -15,7 +15,7 @@ type Skiplist struct {
 	Level int
 }
 
-func Constructor() Skiplist {
+func Constructor1() Skiplist {
 	return Skiplist{&SkipNode{make([]*SkipNode, MAXLEVEL), -1}, 0}
 }
 
