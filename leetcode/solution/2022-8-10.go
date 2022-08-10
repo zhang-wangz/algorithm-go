@@ -5,9 +5,9 @@ import (
 	"unicode"
 )
 
-func main() {
-	solveEquation("x+5-3+x=6+x-2")
-}
+//func main() {
+//	solveEquation("x+5-3+x=6+x-2")
+//}
 func solveEquation(equation string) string {
 	fac, val := 0, 0
 	sign := 1 // 左边默认为正数
