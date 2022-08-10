@@ -23,11 +23,14 @@ func partition(nums []int, start, end int) int {
 	p := rand.Intn(end-start+1) + start
 	nums[p], nums[end] = nums[end], nums[p]
 	p = nums[end]
-	i := start
-	for j := start; j < end; j++ {
+	i, j := start, start
+	for j < end {
 		if nums[j] < p {
 			nums[i], nums[j] = nums[j], nums[i]
 			i++
+			j++
+		} else {
+			j++
 		}
 	}
 	// 把end位置换到i，并且返回中间标志值
