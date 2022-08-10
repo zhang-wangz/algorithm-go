@@ -1,17 +1,38 @@
 package main
 
+import "sort"
+
 func insert(intervals [][]int, newInterval []int) (ans [][]int) {
+	intervals = append(intervals, newInterval)
+	sort.Slice(intervals, func(i, j int) bool {
+		return intervals[i][0] < intervals[j][0]
+	})
+	n := len(intervals)
+	for i := 0; i < n; i++ {
+		left, right := intervals[i][0], intervals[i][1]
+		for ; i+1 < n && right >= intervals[i+1][0]; i++ {
+			r := intervals[i+1][1]
+			if r > right {
+				right = r
+			}
+		}
+		ans = append(ans, []int{left, right})
+	}
+	return
+}
+
+func insert2(intervals [][]int, newInterval []int) (ans [][]int) {
 	left, right := newInterval[0], newInterval[1]
 	merged := false
 	for _, interval := range intervals {
-		if interval[0] > right {
+		if right < interval[0] {
 			// 在插入区间的右侧且无交集
 			if !merged {
 				ans = append(ans, []int{left, right})
 				merged = true
 			}
 			ans = append(ans, interval)
-		} else if interval[1] < left {
+		} else if left > interval[1] {
 			// 在插入区间的左侧且无交集
 			ans = append(ans, interval)
 		} else {
