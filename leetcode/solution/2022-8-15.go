@@ -7,7 +7,7 @@ type MyCircularDeque struct {
 	elements    []int
 }
 
-func Constructor(k int) MyCircularDeque {
+func Constructor3(k int) MyCircularDeque {
 	return MyCircularDeque{elements: make([]int, k+1)}
 }
 
