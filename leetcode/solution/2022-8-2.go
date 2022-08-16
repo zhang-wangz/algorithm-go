@@ -6,7 +6,7 @@ type MyCircularQueue struct {
 	cap       int
 }
 
-func Constructor(k int) MyCircularQueue {
+func Constructor2(k int) MyCircularQueue {
 	return MyCircularQueue{queue: make([]int, k+1), top: 0, tear: 0, cap: k}
 }
 
