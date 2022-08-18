@@ -1,4 +1,4 @@
-package main
+package _022_07
 
 import (
 	"math/rand"

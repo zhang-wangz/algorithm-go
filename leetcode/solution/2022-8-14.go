@@ -1,6 +1,9 @@
 package main
 
-import "strings"
+import (
+	"algorithm-go/leetcode/solution/2022-07"
+	"strings"
+)
 
 func maxScore(s string) (ans int) {
 	score := 1 - int(s[0]) + strings.Count(s[1:], "1")
@@ -10,7 +13,7 @@ func maxScore(s string) (ans int) {
 		} else {
 			score--
 		}
-		ans = max(ans, score)
+		ans = _022_07.max(ans, score)
 	}
 	return
 }

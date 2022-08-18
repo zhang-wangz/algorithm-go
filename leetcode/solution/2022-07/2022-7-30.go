@@ -1,4 +1,4 @@
-package main
+package _022_07
 
 func largestComponentSize(nums []int) int {
 	m := 0
