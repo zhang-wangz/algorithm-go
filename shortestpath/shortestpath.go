@@ -84,7 +84,7 @@ func (h pq) Swap(i, j int)      { h[i], h[j] = h[j], h[i] }
 func (h pq) Less(i, j int) bool { return h[i][1] < h[j][1] }
 func (h pq) Push(v interface{}) { h = append(h, v.([]int)) }
 func (h pq) Pop() interface{}   { top := h[len(h)-1]; h = h[:len(h)-1]; return top }
-func dijkstra2() {
+func Cnt2() {
 	q := priorityqueue.NewWith(func(a, b interface{}) int {
 		x := a.([]int)
 		y := b.([]int)

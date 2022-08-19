@@ -6,7 +6,6 @@ func deleteNode(root *binaryTree.Node, key int) *binaryTree.Node {
 	if root == nil {
 		return root
 	}
-
 	if root.Val > key {
 		root.Left = deleteNode(root.Left, key)
 	} else if root.Val < key {
