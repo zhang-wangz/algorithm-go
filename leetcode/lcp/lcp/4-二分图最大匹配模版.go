@@ -2,7 +2,7 @@ package lcp
 
 // https://leetcode.cn/problems/broken-board-dominoes/
 
-// 二分图模版
+// 二分模版
 func domino(n int, m int, broken [][]int) int {
 	edge := make([][]bool, 65)
 	for i := 0; i < len(edge); i++ {
