@@ -16,7 +16,7 @@ func canArrange(arr []int, k int) bool {
 
 // 超时
 func canArrange2(arr []int, k int) bool {
-	// 2分图匹配
+	// 二分图匹配
 	n := len(arr)
 	vis := make([]bool, n)
 	match := make([]int, n)
