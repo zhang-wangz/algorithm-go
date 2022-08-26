@@ -51,6 +51,3 @@ func maxSumDivThree2(nums []int) (ans int) {
 	dfs(0)
 	return
 }
-func main() {
-	maxSumDivThree([]int{3, 6, 5, 1, 8})
-}

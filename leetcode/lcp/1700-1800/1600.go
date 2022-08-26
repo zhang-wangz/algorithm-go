@@ -7,7 +7,7 @@ type ThroneInheritance struct {
 	dead      map[string]bool
 }
 
-func Constructor(kingName string) ThroneInheritance {
+func Constructor2(kingName string) ThroneInheritance {
 	return ThroneInheritance{king: kingName, successor: map[string][]string{}, dead: map[string]bool{}}
 }
 

@@ -1,6 +1,5 @@
 package main
 
-// 状态dp
 // 由求最大子数组和转化而来，多了一个删除的状态
 func maximumSum(arr []int) (ans int) {
 	dp := make([][2]int, len(arr))
