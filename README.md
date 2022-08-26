@@ -61,7 +61,7 @@ algorithm go
 | mingenTree | 最小生成树 | belong origin oj  ✅ |
 | Union-find sets | 并查集 | belong origin oj  ✅ |
 - 剑指offer区 ✅
-- sql专区入门 ❌ 进行.ing
+- sql专区入门  ✅ 
 
 
 ## 相关仓库
