@@ -1,6 +1,6 @@
 package main
 
-func countPairs(deliciousness []int) (ans int) {
+func countPairs2(deliciousness []int) (ans int) {
 	cnt := map[int]int{}
 	ms := deliciousness[0]
 	for _, v := range deliciousness {
