@@ -2,6 +2,7 @@ package main
 
 // 1391
 // 网络中是否存在有效路径
+// 并查集
 func hasValidPath(grid [][]int) bool {
 	m := len(grid)
 	n := len(grid[0])
