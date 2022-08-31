@@ -1,7 +1,6 @@
 package main
 
 func main() {
-	type pair struct{ x, y int }
-	p := pair{}
-	println(p.x)
+	s := "22"
+	println(s[1:1])
 }

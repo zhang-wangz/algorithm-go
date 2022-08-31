@@ -28,7 +28,6 @@ func hasValidPath(grid [][]int) bool {
 		for j := 0; j < n; j++ {
 			// 当右边是通向的，右边是左向的，表面可达
 			if grid[i][j] == 1 || grid[i][j] == 4 || grid[i][j] == 6 {
-
 				if j+1 < n && (grid[i][j+1] == 1 || grid[i][j+1] == 3 || grid[i][j+1] == 5) {
 					union(i*n+j, i*n+j+1)
 				}
