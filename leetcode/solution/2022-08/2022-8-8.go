@@ -1,6 +1,4 @@
-package main
-
-import "algorithm-go/leetcode/solution/2022-07"
+package _022_08
 
 func findLength(nums1 []int, nums2 []int) int {
 	n, m := len(nums1), len(nums2)
@@ -16,7 +14,7 @@ func findLength(nums1 []int, nums2 []int) int {
 			} else {
 				dp[i+1][j+1] = 0
 			}
-			ans = _022_07.max(ans, dp[i+1][j+1])
+			ans = max(ans, dp[i+1][j+1])
 		}
 	}
 	//for i := n - 1; i >= 0; i-- {

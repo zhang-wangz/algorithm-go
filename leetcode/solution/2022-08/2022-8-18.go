@@ -1,4 +1,4 @@
-package main
+package _022_08
 
 // 最大相等频率
 func maxEqualFreq(nums []int) (ans int) {

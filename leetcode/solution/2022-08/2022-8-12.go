@@ -1,4 +1,4 @@
-package main
+package _022_08
 
 func groupThePeople(groupSizes []int) (ans [][]int) {
 	// hashmap

@@ -1,4 +1,4 @@
-package main
+package _022_08
 
 func validateStackSequences(pushed []int, popped []int) bool {
 	st := make([]int, 0)
