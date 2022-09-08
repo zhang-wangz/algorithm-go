@@ -1,10 +1,21 @@
-![](https://cdn.jsdelivr.net/gh/zhang-wangz/algorithm-go/header_min.png)
-![Github stars](https://img.shields.io/github/stars/zhang-wangz/algorithm-go.svg) ![Github MIT](https://img.shields.io/badge/LICENSE-MIT-green) [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
-
-> a repo records some algorithms using go.
+<p align=center>
+<img src="https://cdn.jsdelivr.net/gh/zhang-wangz/algorithm-go/header_min.png"/>
+  <br>
+  <a title="Hits" target="_blank" href="https://github.com/zhang-wangz/algorithm-go"><img src="https://hits.b3log.org/zhang-wangz/algorithm-go.svg"></a>
+  <img src="https://img.shields.io/github/stars/zhang-wangz/algorithm-go?style=flat-square"/>
+  <img src="https://img.shields.io/github/contributors/zhang-wangz/algorithm-go?style=flat-square"/>
+  <img src="https://img.shields.io/github/commit-activity/y/zhang-wangz/algorithm-go?style=flat-square"/>
+  <img src="https://img.shields.io/github/last-commit/zhang-wangz/algorithm-go?style=flat-square"/>
+  <br>
+  <img src="https://img.shields.io/github/issues/zhang-wangz/algorithm-go?style=flat-square"/>
+  <img src="https://img.shields.io/github/issues-pr/zhang-wangz/algorithm-go?style=flat-square"/>
+  <img src="https://img.shields.io/github/watchers/zhang-wangz/algorithm-go?style=flat-square"/>
+  <img src="https://img.shields.io/github/issues-closed/zhang-wangz/algorithm-go?style=flat-square"/>
+  <br>
+  a repo records some algorithms using go.
+</p>
 
 ## 内容列表
-
 - [背景](#背景)
 - [参与](#参与)
 - [说明](#说明)
