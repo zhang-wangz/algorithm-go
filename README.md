@@ -6,7 +6,7 @@ algorithm go
 
 > a repo records some algorithms using go.
 
-![](header.png)
+![](https://cdn.jsdelivr.net/gh/zhang-wangz/LeetCodeRating/algorithm-go/header_min.png)
 
 ## 内容列表
 
