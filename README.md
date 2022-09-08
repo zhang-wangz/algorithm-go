@@ -1,12 +1,10 @@
 # algorithm go
 
-![Github stars](https://img.shields.io/github/stars/zhang-wangz/algorithm-go.svg) ![Github MIT](https://img.shields.io/badge/LICENSE-MIT-green) [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme) 
-
-algorithm go
+![Github stars](https://img.shields.io/github/stars/zhang-wangz/algorithm-go.svg) ![Github MIT](https://img.shields.io/badge/LICENSE-MIT-green) [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 
 > a repo records some algorithms using go.
 
-![](https://cdn.jsdelivr.net/gh/zhang-wangz/LeetCodeRating/algorithm-go/header_min.png)
+![](https://cdn.jsdelivr.net/gh/zhang-wangz/algorithm-go/header_min.png)
 
 ## 内容列表
 
