@@ -8,7 +8,7 @@ type Bitset struct {
 	cnt, reversed int
 }
 
-func Constructor(size int) Bitset {
+func Constructor3(size int) Bitset {
 	return Bitset{make([]int, size), 0, 0}
 }
 
