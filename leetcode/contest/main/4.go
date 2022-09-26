@@ -13,6 +13,7 @@ func countExcellentPairs(nums []int, k int) int64 {
 
 		}
 	}
+	return 0
 }
 
 func compute(i, j int) int {

@@ -16,7 +16,7 @@ func quickSort(nums []int, start, end int) []int {
 
 func partition(nums []int, start, end int) int {
 	p := nums[end]
-	var i int
+	var i int  // 标记比p小的值的idx
 	for j := start; j < end; j++ {
 		if nums[j] < p {
 			nums[i], nums[j] = nums[j], nums[i]
