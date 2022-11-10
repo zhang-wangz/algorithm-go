@@ -109,7 +109,7 @@ func solve(memo [][]byte) int {
 	return sum + 1
 }
 
-//查找节点所在的集合（查找根节点）
+// 查找节点所在的集合（查找根节点）
 func findRoot(t int, parent []int) int {
 	tmp := t
 	for parent[tmp] != -1 {
@@ -118,8 +118,8 @@ func findRoot(t int, parent []int) int {
 	return tmp
 }
 
-//将两个节点所在的树（集合）进行合并; 合并失败返回false，成功返回true
-//同时也可以检查两个节点是否在同一个集合
+// 将两个节点所在的树（集合）进行合并; 合并失败返回false，成功返回true
+// 同时也可以检查两个节点是否在同一个集合
 func union(x, y int, parent []int) bool {
 	xroot := findRoot(x, parent)
 	yroot := findRoot(y, parent)
