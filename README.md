@@ -15,18 +15,10 @@
   a repo records some algorithms using go.
 </p>
 
-## 内容列表
-- [背景](#背景)
-- [参与](#参与)
-- [说明](#说明)
-- [相关仓库](#相关仓库)
-- [维护者](#维护者)
-- [如何贡献](#如何贡献)
-- [使用许可](#使用许可)
-
 ## 背景
 
-`algorithm go` 的原型项目是 [greyireland/algorithm-pattern](https://github.com/greyireland/algorithm-pattern), 其他诸如数论，几何，线段树等类型都是在此基础之上所整合。
+&nbsp; `algorithm go` 的原型项目是 [greyireland/algorithm-pattern](https://github.com/greyireland/algorithm-pattern) <br/>
+其他诸如数论，几何，线段树等类型都是在此基础之上所整合。
 
 这个仓库的目标只有一个: **希望更多的人加入写算法的队列** 
 
