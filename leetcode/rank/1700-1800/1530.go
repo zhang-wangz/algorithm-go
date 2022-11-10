@@ -43,7 +43,7 @@ func countPairs(root *TreeNode, distance int) (ans int) {
 	return
 }
 
-//func main() {
+//func questionbank() {
 //	root := &TreeNode{Val: 1}
 //	root.Left = &TreeNode{Val: 2}
 //	root.Right = &TreeNode{Val: 3}

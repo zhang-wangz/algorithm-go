@@ -1,6 +1,6 @@
-package lcp
+package solution
 
-//https://leetcode.cn/problems/coin-bonus/
+// https://leetcode.cn/problems/coin-bonus/
 // 发leetcoin
 func bonus(n int, leadership [][]int, operations [][]int) []int {
 	begin, end := make([]int, n+1), make([]int, n+1)

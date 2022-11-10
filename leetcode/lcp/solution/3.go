@@ -1,4 +1,4 @@
-package lcp
+package solution
 
 import "strings"
 

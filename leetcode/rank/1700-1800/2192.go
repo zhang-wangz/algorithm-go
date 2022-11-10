@@ -47,7 +47,7 @@ func getAncestors(n int, edges [][]int) (ans [][]int) {
 	return ans
 }
 
-//func main() {
+//func questionbank() {
 //	s := [][]int{{0,3},{0,4},{1,3},{2,4},{2,7},{3,5},{3,6},{3,7},{4,6}}
 //	getAncestors(8,s)
 //}

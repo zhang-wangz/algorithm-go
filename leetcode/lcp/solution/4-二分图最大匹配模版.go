@@ -1,4 +1,4 @@
-package lcp
+package solution
 
 // https://leetcode.cn/problems/broken-board-dominoes/
 

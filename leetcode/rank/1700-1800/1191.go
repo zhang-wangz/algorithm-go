@@ -29,7 +29,7 @@ func kConcatenationMaxSum(arr []int, k int) (ans int) {
 	return ans % mod
 }
 
-//tle
+// tle
 func kConcatenationMaxSum2(arr []int, k int) (ans int) {
 	if len(arr) == 0 {
 		return 0

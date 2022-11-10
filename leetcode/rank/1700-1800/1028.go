@@ -7,7 +7,7 @@ type TreeNode struct {
 }
 
 // m l r
-//相邻的节点不是左节点，就是该节点往上某个节点的右节点
+// 相邻的节点不是左节点，就是该节点往上某个节点的右节点
 func recoverFromPreorder(traversal string) *TreeNode {
 	pos, path := 0, make([]*TreeNode, 0)
 	for pos < len(traversal) {

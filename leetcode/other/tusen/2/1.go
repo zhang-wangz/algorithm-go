@@ -6,7 +6,7 @@ package tusen2
 //	"unicode"
 //)
 //
-//func main() {
+//func questionbank() {
 //	var s string
 //	fmt.Scanln(&s)
 //	f := false

@@ -1,4 +1,4 @@
-package main
+package questionbank
 
 func main() {
 	s := "22"

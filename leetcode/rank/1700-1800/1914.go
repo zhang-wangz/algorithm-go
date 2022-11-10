@@ -37,7 +37,7 @@ func rotateGrid(grid [][]int, k int) [][]int {
 	return grid
 }
 
-//func main() {
+//func questionbank() {
 //	rotateGrid([][]int{{40,10},{30,20}}, 1)
 //}
 //func min(a, b int) int {

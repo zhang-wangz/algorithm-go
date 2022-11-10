@@ -1,4 +1,4 @@
-package lcp
+package solution
 
 func fraction(cont []int) []int {
 	size := len(cont)

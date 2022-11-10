@@ -1,4 +1,4 @@
-package lcp
+package solution
 
 func game(guess []int, answer []int) int {
 	cnt := 0
