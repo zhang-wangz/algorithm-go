@@ -1,5 +1,5 @@
 <p align=center>
-<img src="https://cdn.jsdelivr.net/gh/zhang-wangz/algorithm-go/images/header_min.png"/>
+<img src="https://raw.staticdn.net/zhang-wangz/algorithm-go/main/images/header_min.png"/>
   <br>
   <a title="Hits" target="_blank" href="https://github.com/zhang-wangz/algorithm-go"><img src="https://hits.b3log.org/zhang-wangz/algorithm-go.svg"></a>
   <img src="https://img.shields.io/github/stars/zhang-wangz/algorithm-go?style=flat-square"/>
