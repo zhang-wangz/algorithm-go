@@ -1,6 +1,5 @@
 from typing import List
 
-
 class Solution:
     def maximumUnits(self, boxTypes: List[List[int]], truckSize: int) -> int:
         res = 0
