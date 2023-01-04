@@ -2,16 +2,13 @@ package main
 
 import (
 	"fmt"
-	"strings"
-	"unicode"
+
+	"github.com/emirpasic/gods/trees/redblacktree"
 )
 
 func main() {
-	s := "2121 sssd 2 343 sdr"
-	r := strings.FieldsFunc(s, func(r rune) bool {
-		return !unicode.IsDigit(r)
-	})
-	for _, w := range r {
-		fmt.Println(w)
-	}
+	tree := redblacktree.NewWithIntComparator()
+	tree.Put(2, nil)
+	tree.Put(1, nil)
+	fmt.Print(tree.Keys())
 }
