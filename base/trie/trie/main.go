@@ -1,4 +1,4 @@
-package _1_78
+package main
 
 // 字典树
 type Trie struct {
@@ -39,15 +39,4 @@ func (tr *Trie) searchPrefix(prefix string) *Trie {
 func (tr *Trie) Search(word string) bool {
 	node := tr.searchPrefix(word)
 	return node != nil && node.isEnd
-}
-
-func (tr *Trie) remove(word string) {
-	node := tr
-	node.child[word[0]-'a'] = nil
-}
-
-// StartsWith /** Returns if there is any word in the trie that starts with the given prefix. */
-func (tr *Trie) StartsWith(prefix string) bool {
-	node := tr.searchPrefix(prefix)
-	return node != nil
 }

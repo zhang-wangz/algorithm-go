@@ -2,13 +2,10 @@ package main
 
 import (
 	"fmt"
-
-	"github.com/emirpasic/gods/trees/redblacktree"
 )
 
 func main() {
-	tree := redblacktree.NewWithIntComparator()
-	tree.Put(2, nil)
-	tree.Put(1, nil)
-	fmt.Print(tree.Keys())
+	m := map[int]int{}
+	m[2] = 2
+	fmt.Printf("%d", m[2])
 }
