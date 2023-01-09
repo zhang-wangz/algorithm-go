@@ -40,11 +40,34 @@ func (t *TrieXor) getCnt(num int, x int) int {
 	return res
 }
 
-func countPairs(nums []int, low int, high int) (ans int) {
+func countPairs2(nums []int, low int, high int) (ans int) {
 	tr := &TrieXor{}
 	for _, num := range nums {
-		ans += tr.getCnt(num, high + 1) - tr.getCnt(num, low)
+		ans += tr.getCnt(num, high+1) - tr.getCnt(num, low)
 		tr.insert(num)
 	}
 	return ans
+}
+
+func countPairs(nums []int, low int, high int) (ans int) {
+	m := map[int]int{}
+	for _, num := range nums {
+		m[num]++
+	}
+	for high++; high > 0; high >>= 1 {
+		next := map[int]int{}
+		for k, v := range m {
+			if high&1 == 1 {
+				// x ^ y = t => x ^ t = y
+				ans += v * m[k^(high-1)]
+			}
+			if low&1 == 1 {
+				ans -= v * m[k^(low-1)]
+			}
+			next[k>>1] += v
+		}
+		m = next
+		low >>= 1
+	}
+	return ans / 2
 }
