@@ -1,6 +1,7 @@
 package binaryTree
 
 // 深度搜索，从下到上，分治
+// 左右中
 func PostOrder(root *Node) []int {
 	if root == nil {
 		return nil

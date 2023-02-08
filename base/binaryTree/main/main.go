@@ -1,9 +1,6 @@
 package main
 
-import (
-	"algorithm-go/base/binaryTree"
-	"algorithm-go/leetcode/everyday/2022-05"
-)
+import "algorithm-go/base/binaryTree"
 
 func main() {
 	root := new(binaryTree.Node)
