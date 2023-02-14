@@ -109,6 +109,35 @@ input = lambda: sys.stdin.readline().strip()
 ints = lambda: list(map(int, input().split()))
 Int = lambda: int(input())
 inf = float('inf')
-'''    
 
 '''    
+https://codeforces.com/problemset/problem/1361/B
+
+输入 t(≤1e5) 表示 t 组数据，每组数据输入 n(≤1e6) p(1≤p≤1e6) 和长为 n 的数组 k(0≤k[i]≤1e6)。所有数据的 n 之和不超过 1e6。
+
+从这 n 个数中选出若干个数（可以为空）组成一组，剩余的数组成另一组。
+每组计算 pow(p,k[i]) 之和。
+输出这两个和的差值的最小值，对结果模 1e9+7。
+'''    
+mod = int(1e9+7)
+def quickPow(x, n):
+    res = 1
+    while n > 0:
+        if n & 1:
+            res = res * x % mod
+        else:
+            x = x * x % mod
+        n >>= 1
+    return res
+
+def solve():
+    t = Int()
+    for i in range(t):
+        n, p = ints()
+        k = ints()
+        if p == 1:
+            print(n%2)
+            continue
+        k.sort()
+        
+
