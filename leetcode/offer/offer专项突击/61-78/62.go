@@ -14,8 +14,8 @@ func Constructor10() Trie {
 // Insert /** Inserts a word into the trie. */
 func (tr *Trie) Insert(word string) {
 	node := tr
-	for i := 0; i < len(word); i++ {
-		c := word[i] - 'a'
+	for _, ch := range word {
+		c := ch - 'a'
 		if node.child[c] == nil {
 			node.child[c] = &Trie{}
 		}
