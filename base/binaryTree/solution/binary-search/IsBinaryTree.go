@@ -1,6 +1,10 @@
 package binary_search
 
-import "algorithm-go/base/binaryTree"
+import (
+	"fmt"
+
+	"algorithm-go/base/binaryTree"
+)
 
 // bfs 判断中序是否有序就行
 func IsBinaryTree(root *binaryTree.Node) bool {
@@ -16,21 +20,21 @@ func IsBinaryTree(root *binaryTree.Node) bool {
 	return true
 }
 
-func inOrder(root *binaryTree.Node) []int {
+func InOrder(root *binaryTree.Node) []int {
+	if root == nil {
+		return nil
+	}
 	res := make([]int, 0)
 	stack := make([]*binaryTree.Node, 0)
 	for root != nil || len(stack) != 0 {
-		if root != nil {
+		for root != nil {
 			stack = append(stack, root)
 			root = root.Left
 		}
-
-		if len(stack) != 0 {
-			node := stack[len(stack)-1]
-			stack = stack[:len(stack)-1]
-			res = append(res, node.Val)
-			root = node.Right
-		}
+		node := stack[len(stack)-1]
+		stack = stack[:len(stack)-1]
+		res = append(res, node.Val)
+		root = node.Right
 	}
 	return res
 }
