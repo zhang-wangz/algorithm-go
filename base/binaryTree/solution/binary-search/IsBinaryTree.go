@@ -1,8 +1,6 @@
 package binary_search
 
 import (
-	"fmt"
-
 	"algorithm-go/base/binaryTree"
 )
 
