@@ -1,3 +1,6 @@
+from itertools import combinations
+
+
 class Solution:
     def numberOfGoodSubarraySplits(self, nums: List[int]) -> int:
         mod = 1e9 + 7
