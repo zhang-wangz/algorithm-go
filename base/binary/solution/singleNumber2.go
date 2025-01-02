@@ -10,7 +10,7 @@ func singleNumber2(nums []int) int {
 			// 左移动之后最后一位是1
 			sum += (nums[j] >> i) & 1
 		}
-		res ^= (sum % 3) << i
+		res |= (sum % 3) << i
 	}
 	return res
 }

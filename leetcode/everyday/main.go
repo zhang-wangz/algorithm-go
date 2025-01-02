@@ -1,11 +1,10 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
-	m := map[int]int{}
-	m[2] = 2
-	fmt.Printf("%d", m[2])
+	a := make([]int, 0, 3)
+	a = append(a, 2)
+	a = append(a, 3)
+	fmt.Println(a)
 }

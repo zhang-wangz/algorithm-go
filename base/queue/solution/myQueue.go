@@ -5,6 +5,7 @@ type MyQueue struct {
 	back  []int
 }
 
+// https://leetcode.cn/problems/implement-queue-using-stacks/
 func NewMyQueue() *MyQueue {
 	return &MyQueue{
 		stack: []int{},

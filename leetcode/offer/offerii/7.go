@@ -5,7 +5,7 @@ type TreeNode struct {
 	Left  *TreeNode
 	Right *TreeNode
 }
-
+// https://leetcode.cn/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
 // 迭代
 func buildTree2(preorder []int, inorder []int) *TreeNode {
 	if len(preorder) == 0 {
